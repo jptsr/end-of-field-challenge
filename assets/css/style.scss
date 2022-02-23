@@ -5,3 +5,121 @@
     font-family: "rubik";
     src: url(../font/Rubik/Rubik-Regular.ttf);
 }
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+div.logo {
+    width: 50.52px;
+    height: 14px;
+    left: 35px;
+    top: 9px;
+    font: {
+        family: "rubik", sans-sérif;
+        style: normal;
+        weight: normal;
+        size: 12px;
+    }
+    line-height: 14px;
+    letter-spacing: -1px;
+    color: #1F1F1F;
+    img {
+        position: absolute;
+        width: 9.52px;
+        height: 9.52px;
+        left: 35px;
+        top: 11.5px;
+    }
+
+    p{
+        position: absolute;
+        height: 14px;
+        left: 11.52%;
+        right: 80.02%;
+        top: 9px
+    }
+}
+
+
+li.nav-item {
+    list-style: none;
+}
+
+a.nav-link {
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.7s ease;
+    color: #262626;
+    &:hover {
+        color: white;
+    }
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 15px;
+    height: 2px;
+    margin: 3px auto;
+    padding: 0;
+    background-color: #258AFF;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+@media only screen and(max-width:428px){
+    .hamburger {
+        display: block;
+    }
+    .hamburger:active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger:active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger:active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    ul.nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #258AFF;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 100;
+        &:active{
+            left: 0;
+        }
+    }
+
+    li.nav-item{
+        margin: 10px 0;
+    }
+}
