@@ -1,7 +1,17 @@
 @font-face {
     font-family: "karla";
-    src: url(../font/Karla/Karla-Regular.ttf);
+    src: url(../font/Karla/Karla-Regular.ttf) format("truetype");
 
     font-family: "rubik";
-    src: url(../font/Rubik/Rubik-Regular.ttf);
+    src: url(../font/Rubik/Rubik-Regular.ttf) format("trueType");
+}
+
+body{
+    font-family: "karla", sans-serif;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

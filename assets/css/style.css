@@ -1,7 +1,24 @@
 @font-face {
   font-family: "karla";
-  src: url(../font/Karla/Karla-Regular.ttf);
+  src: url(../font/Karla/Karla-Regular.ttf) format("truetype");
   font-family: "rubik";
-  src: url(../font/Rubik/Rubik-Regular.ttf);
+  src: url(../font/Rubik/Rubik-Regular.ttf) format("trueType");
+}
+
+body {
+  font-family: "karla", sans-serif;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
