@@ -8,10 +8,85 @@
 
 body{
     font-family: "karla", sans-serif;
+    font-size: 15px;
+    color: #1F1F1F;
 }
 
-section{
+/* Variables */
+
+$greyColor1: #E4E4E4;
+$greyColor2: #878B90;
+$greyColor3: #666666;
+$greyColor4: #1F1F1F;
+$whiteColor: white;
+$blackColor: black;
+$blueColor: #258AFF;
+$greenColor: #4EAB08;
+$orangeColor: #FC593B;
+
+/* Useful to repeat */
+
+.flexHorizon{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* -------------------------------------- Make Landing page fast and easily ------------------------------------------ */
+
+section{
+    @extend .flexHorizon;
+
+    p{
+        text-align: center;
+        color: $greyColor3;
+    }
+
+    #p_present{
+        font-size: 10px;
+        font-weight: bold;
+        line-height: 12px;
+        letter-spacing: 2.8125px;
+    }
+
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: -3px;
+        text-align: center;
+        color: $greyColor4;
+        padding: auto 0;
+        margin-top: 20px;
+    }
+
+    #p_create{
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.4px;
+    }
+
+    #p_trusted{
+        color: $greyColor2;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: -0.32381px;
+    }
+}
+
+/* --------------------------------------------------- services ----------------------------------------------------- */
+
+.services{
+    @extend .flexHorizon;
+}
+
+@media only screen and (max-width: 428px) {
+    section{
+        margin: 0 30px;
+    }
+    .services{
+        margin: 0 30px;
+    }
 }
