@@ -5,15 +5,16 @@
   src: url(../font/Rubik/Rubik-Regular.ttf) format("trueType");
 }
 
+/* Variables */
 body {
   font-family: "karla", sans-serif;
   font-size: 15px;
   color: #1F1F1F;
+  background-color: #E5E5E5;
 }
 
-/* Variables */
 /* Useful to repeat */
-.flexHorizon, section, .services {
+.flexHorizon, section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,49 +28,118 @@ body {
 }
 
 /* -------------------------------------- Make Landing page fast and easily ------------------------------------------ */
+section {
+  margin-bottom: 55px;
+}
+
 section p {
   text-align: center;
   color: #666666;
 }
 
-section #p_present {
-  font-size: 10px;
+section .p_present {
+  font-size: 0.7em;
   font-weight: bold;
-  line-height: 12px;
-  letter-spacing: 2.8125px;
+  line-height: 0.8em;
+  letter-spacing: 0.4em;
 }
 
 section h1 {
-  font-size: 40px;
+  font-size: 2.8em;
   font-weight: 700;
-  line-height: 45px;
-  letter-spacing: -3px;
+  line-height: 1.05em;
+  letter-spacing: -0.06em;
   text-align: center;
   color: #1F1F1F;
   padding: auto 0;
   margin-top: 20px;
+  margin-bottom: 0;
 }
 
-section #p_create {
-  font-size: 15px;
-  line-height: 25px;
-  letter-spacing: -0.4px;
+section .p_create {
+  font-size: 1em;
+  line-height: 1.7em;
+  letter-spacing: 0em;
+  margin: 17px 0;
 }
 
-section #p_trusted {
+section form .f_enter {
   color: #878B90;
-  font-size: 10px;
-  line-height: 12px;
-  letter-spacing: -0.32381px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-left: 10px;
+  height: 28px;
+  width: 133.14px;
+  margin-right: 3px;
+  font-size: 0.8em;
+  letter-spacing: -0.01em;
+}
+
+section form .f_submit {
+  height: 32px;
+  width: 111.19px;
+  border: 1px solid #FC593B;
+  border-radius: 7px;
+  color: white;
+  background-color: #FC593B;
+  font-weight: 700;
+  font-size: 0.8em;
+  letter-spacing: -0.01em;
+  margin-left: 3px;
+}
+
+section .p_trusted {
+  color: #878B90;
+  font-size: 0.7em;
+  font-weight: 400;
+  line-height: 3em;
+  letter-spacing: 0em;
 }
 
 /* --------------------------------------------------- services ----------------------------------------------------- */
+.services {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+}
+
+.services img {
+  margin-top: -48px;
+  padding-right: 2em;
+  width: 25px;
+}
+
+.services .d_services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.services .d_services div h3 {
+  font-size: 1.35em;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.services .d_services div p {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #666666;
+  letter-spacing: 0.05em;
+}
+
 @media only screen and (max-width: 428px) {
   section {
-    margin: 0 30px;
+    margin-left: 35px;
+    margin-right: 35px;
   }
   .services {
-    margin: 0 30px;
+    margin-left: 35px;
+    margin-right: 35px;
   }
 }
 /*# sourceMappingURL=style.css.map */

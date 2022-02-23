@@ -6,14 +6,9 @@
     src: url(../font/Rubik/Rubik-Regular.ttf) format("trueType");
 }
 
-body{
-    font-family: "karla", sans-serif;
-    font-size: 15px;
-    color: #1F1F1F;
-}
-
 /* Variables */
 
+$backgroundColor: #E5E5E5;
 $greyColor1: #E4E4E4;
 $greyColor2: #878B90;
 $greyColor3: #666666;
@@ -23,6 +18,13 @@ $blackColor: black;
 $blueColor: #258AFF;
 $greenColor: #4EAB08;
 $orangeColor: #FC593B;
+
+body{
+    font-family: "karla", sans-serif;
+    font-size: 15px;
+    color: #1F1F1F;
+    background-color: $backgroundColor;
+}
 
 /* Useful to repeat */
 
@@ -38,55 +40,125 @@ $orangeColor: #FC593B;
 
 section{
     @extend .flexHorizon;
+    margin-bottom: 55px;
 
     p{
         text-align: center;
         color: $greyColor3;
     }
 
-    #p_present{
-        font-size: 10px;
+    .p_present{
+        font-size: 0.7em;
         font-weight: bold;
-        line-height: 12px;
-        letter-spacing: 2.8125px;
+        line-height: 0.8em;
+        letter-spacing: 0.4em;
     }
 
     h1{
-        font-size: 40px;
+        font-size: 2.8em;
         font-weight: 700;
-        line-height: 45px;
-        letter-spacing: -3px;
+        line-height: 1.05em;
+        letter-spacing: -0.06em;
         text-align: center;
         color: $greyColor4;
         padding: auto 0;
         margin-top: 20px;
+        margin-bottom: 0;
+        // margin-top: -16px;
+        // margin-bottom: -20px;
+        // white-space: pre;
     }
 
-    #p_create{
-        font-size: 15px;
-        line-height: 25px;
-        letter-spacing: -0.4px;
+    .p_create{
+        font-size: 1em;
+        line-height: 1.7em;
+        letter-spacing: 0em;
+        margin: 17px 0;
     }
 
-    #p_trusted{
+    form{
+        .f_enter{
+            color: $greyColor2;
+            background-color: $whiteColor;
+            border: 1px solid $whiteColor;
+            border-radius: 5px;
+            padding-left: 10px;
+            height: 28px;
+            width: 133.14px;
+            margin-right: 3px;
+            font-size: 0.8em;
+            letter-spacing: -0.01em;
+        }
+
+        .f_submit{
+            height: 32px;
+            width: 111.19px;
+            border: 1px solid $orangeColor;
+            border-radius: 7px;
+            color: $whiteColor;
+            background-color: $orangeColor;
+            font-weight: 700;
+            font-size: 0.8em;
+            letter-spacing: -0.01em;
+            margin-left: 3px;
+        }
+    }
+
+    .p_trusted{
         color: $greyColor2;
-        font-size: 10px;
-        line-height: 12px;
-        letter-spacing: -0.32381px;
+        font-size: 0.7em;
+        font-weight: 400;
+        line-height: 3em;
+        letter-spacing: 0em;
     }
 }
 
+
+
 /* --------------------------------------------------- services ----------------------------------------------------- */
 
+
+
 .services{
-    @extend .flexHorizon;
+    display: grid;
+    grid-template-rows: auto auto auto;
+
+    img{
+        margin-top: -48px;
+        padding-right: 2em;
+        width: 25px;
+    }
+
+    .d_services{
+        // margin-top: -20px;
+        display: flex;
+        margin-bottom: 20px;
+        margin-left: 10px;
+
+        div{
+            h3{
+                font-size: 1.35em;
+                font-weight: 700;
+                letter-spacing: -0.02em;
+            }
+
+            p{
+                font-size: 1em;
+                line-height: 1.5em;
+                color: $greyColor3;
+                letter-spacing: 0.05em;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 428px) {
     section{
-        margin: 0 30px;
+        margin-left: 35px;
+        margin-right: 35px;
     }
     .services{
-        margin: 0 30px;
+        margin-left: 35px;
+        margin-right: 35px;
     }
 }
