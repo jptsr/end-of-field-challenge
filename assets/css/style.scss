@@ -28,7 +28,7 @@ $orangeColor: #FC593B;
 }
 
 .button{
-    height: 32px;
+    height: 28px;
     width: 111.19px;
     border: 1px solid $orangeColor;
     border-radius: 7px;
@@ -71,7 +71,8 @@ $orangeColor: #FC593B;
 
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: 0, auto;
+    padding:0;
 }
 
 body{
@@ -245,16 +246,8 @@ a.nav-link {
 
 
 .services{
-    display: grid;
-    grid-template-rows: auto auto auto;
-    justify-content: center;
+    @extend .flexVer;
     margin-bottom: 125px;
-
-    img{
-        margin-top: -48px;
-        padding-right: 2em;
-        width: 25px;
-    }
 
     .d_services{
         // margin-top: -20px;
@@ -262,7 +255,14 @@ a.nav-link {
         margin-bottom: 20px;
         margin-left: 10px;
 
+        img{
+            width: 25px;
+            margin-top: -50px;
+        }
+
         div{
+            padding-left: 30px;
+
             h3{
                 @extend .h3;
             }
@@ -337,7 +337,7 @@ a.nav-link {
 .design2{
     margin-top: 75px;
     border-bottom: 1px solid $whiteColor;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     margin-left: 25px;
     margin-right: 25px;
 
@@ -362,39 +362,44 @@ a.nav-link {
         }
     }
     
-    
-
     .d2_design2{
         @extend .flexVer;
         margin-top: 40px;
         text-align: center;
 
-        span{
-            background-color: $blueColor;
-            border: 1px solid $blueColor;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            position: relative;
-            display: flex;
-            justify-content: space-around;
-        }
+        div{
+            @extend .flexVer;
+            span{
+                background-color: $blueColor;
+                border: 1px solid $blueColor;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: space-around;
 
-        h3{
-            @extend .h3;
-        }
-
-        p{
-            @extend .paragraphe_weDesign;
-            padding-left: 50px;
-            padding-right: 50px;
-        }
-
-        .p_special{
-            @extend .paragraphe_weDesign;
-            padding-left: 60px;
-            padding-right: 60px;
-            margin-bottom: 60px;
+                img{
+                    width: 26px;
+                }
+            }
+    
+            h3{
+                @extend .h3;
+            }
+    
+            p{
+                @extend .paragraphe_weDesign;
+                padding-left: 50px;
+                padding-right: 50px;
+                color: $greyColor3;
+            }
+    
+            .p_special{
+                @extend .paragraphe_weDesign;
+                padding-left: 60px;
+                padding-right: 60px;
+                margin-bottom: 60px;
+            }
         }
 
         div{
@@ -417,9 +422,11 @@ a.nav-link {
     div{
         padding-left: 10px;
         padding-right: 10px;
+        margin-bottom: 50px;
         .p_design{
             @extend .paragraphe_design;
             padding-right: 0;
+            color: $blueColor;
         }
     
         h2{
@@ -430,6 +437,7 @@ a.nav-link {
         .p_weDesigned{
             @extend .paragraphe_weDesign;
             padding-right: 80px;
+            color: $greyColor3;
         }
     }
 
@@ -438,24 +446,31 @@ a.nav-link {
             background-color: $whiteColor;
             border-radius: 10px;
             margin-bottom: 20px;
-            padding-top: 20px;
+            padding-top: 30px;
+            padding-left: 25px;
+            padding-right: 25px;
 
             .d_insideStory{
                 display: flex;
 
                 img{
-                    margin-top: 0px;
                     margin-right: 15px;
-                    margin-left: 15px;
+                    margin-top: 20px;
+                    height: 60px;
                 }
 
                 div{
+                    margin-bottom: 15px;
+                    margin-top: 20px;
+
                     h4{
-                        margin-bottom: 8px;
+                        margin-bottom: 7px;
                     }
     
                     p{
                         margin-top: 0;
+                        font-size: 0.8em;
+                        color: $greyColor3;
                     }
                 }
             }
@@ -463,11 +478,12 @@ a.nav-link {
     }
 
     .d_logos{
-        margin-top: 80px;
-        padding: auto 0;
         display: flex;
-        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 80px;
         margin-bottom: 25px;
+        gap: 25px;
+        justify-content: space-around;
         
         img{
             filter: grayscale(1);
