@@ -291,6 +291,14 @@ a.nav-link {
     margin-right: 0;
     background-color: $blueColor;
 
+    .design1_img{
+        position: absolute;
+        z-index: 1;
+        top: -130px;
+        right: 8%;
+        left: auto;
+    }
+
     .div_design1{
         padding-left: 35px;
         padding-right: 35px;
@@ -324,14 +332,6 @@ a.nav-link {
             border-color: $whiteColor;
             width: 181px;
         }
-    }
-
-    .design1_img{
-        position: absolute;
-        z-index: 1;
-        top: -130px;
-        right: 8%;
-        left: auto;
     }
 }
 
@@ -810,14 +810,36 @@ footer {
     .design1{
         padding-left: 30px;
         padding-right: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .design1_img{
             position: relative;
+            z-index: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            // right: 8%;
+            // left: auto;
+        }
+
+        .div_design1{
+            z-index: 0;
+            @extend .flexVer;
+            padding-top: 0;
         }
     }
 
     .design2{
         margin-left: 50px;
         margin-right: 50px;
+    }
+
+    .cust_story{
+        .d_logos{
+            gap: 20px;
+        }
     }
 }

@@ -265,6 +265,14 @@ a.nav-link:hover {
   background-color: #258AFF;
 }
 
+.design1 .design1_img {
+  position: absolute;
+  z-index: 1;
+  top: -130px;
+  right: 8%;
+  left: auto;
+}
+
 .design1 .div_design1 {
   padding-left: 35px;
   padding-right: 35px;
@@ -291,14 +299,6 @@ a.nav-link:hover {
   background-color: white;
   border-color: white;
   width: 181px;
-}
-
-.design1 .design1_img {
-  position: absolute;
-  z-index: 1;
-  top: -130px;
-  right: 8%;
-  left: auto;
 }
 
 /* --------------------------------------------------- Design 2 ----------------------------------------------------- */
@@ -803,9 +803,32 @@ footer .footer_li_grey {
   .design1 {
     padding-left: 30px;
     padding-right: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .design1 .design1_img {
     position: relative;
+    z-index: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  .design1 .div_design1 {
+    z-index: 0;
   }
   .design2 {
     margin-left: 50px;
