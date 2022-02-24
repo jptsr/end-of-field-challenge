@@ -87,12 +87,9 @@ header button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 24px;
   margin-top: 20px;
 }
@@ -819,10 +816,12 @@ footer .footer_li_grey {
   .cust_story .d_logos {
     gap: 60px;
   }
-  header .navbar {
+  header .navbar .nav-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 40px;
+    margin-left: 20px;
   }
   header .navbar div.logo {
     display: -webkit-box;
@@ -846,6 +845,7 @@ footer .footer_li_grey {
     border: solid 2px #258AFF;
     border-radius: 3px;
     padding: 7px 15px;
+    margin-left: auto;
     font-family: "karla", sans-serif;
     font-size: 16px;
     font-weight: bold;
