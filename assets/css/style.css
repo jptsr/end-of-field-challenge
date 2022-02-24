@@ -241,6 +241,8 @@ a.nav-link:hover {
 .services .d_services img {
   width: 25px;
   margin-top: -50px;
+  -webkit-filter: saturate(4);
+          filter: saturate(4);
 }
 
 .services .d_services div {
@@ -335,6 +337,8 @@ a.nav-link:hover {
 
 .design2 .d2_design2 div span img {
   width: 26px;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
 }
 
 .design2 .d2_design2 div p {
@@ -356,6 +360,8 @@ a.nav-link:hover {
 .design2 .d2_design2 div img {
   width: 358px;
   border-radius: 15px;
+  -webkit-filter: drop-shadow(0 0 0.75rem #b4b4b4);
+          filter: drop-shadow(0 0 0.75rem #b4b4b4);
 }
 
 /* --------------------------------------------------- Customer Story ----------------------------------------------------- */

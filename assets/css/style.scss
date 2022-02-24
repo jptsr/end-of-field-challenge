@@ -18,6 +18,7 @@ $blackColor: black;
 $blueColor: #258AFF;
 $greenColor: #4EAB08;
 $orangeColor: #FC593B;
+$dropShadow: rgb(180, 180, 180);
 
 /* Useful to repeat */
 
@@ -258,6 +259,7 @@ a.nav-link {
         img{
             width: 25px;
             margin-top: -50px;
+            filter: saturate(4);
         }
 
         div{
@@ -380,6 +382,7 @@ a.nav-link {
 
                 img{
                     width: 26px;
+                    filter: brightness(0) invert(1);
                 }
             }
     
@@ -407,6 +410,7 @@ a.nav-link {
             img{
                 width: 358px;
                 border-radius: 15px;
+                filter: drop-shadow(0 0 0.75rem $dropShadow);
             }
         }
     }
