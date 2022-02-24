@@ -65,7 +65,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0, auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -82,28 +82,45 @@ header button {
   display: none;
 }
 
-div.logo {
+.navbar {
+  min-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding: 0 24px;
+  margin-top: 20px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "rubik", sans-sérif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
+  display: flex;
   line-height: 14px;
   letter-spacing: -1px;
   color: #1F1F1F;
 }
 
-div.logo img {
-  width: 9.52px;
-  height: 9.52px;
-  left: 35px;
-  top: 11.5px;
+.logo p {
+  margin-left: 2px;
 }
 
-div.logo p {
-  height: 14px;
-  left: 11.52%;
-  right: 80.02%;
-  top: 9px;
+.logo img {
+  height: 9px;
+  width: 9px;
 }
 
 li.nav-item {
@@ -122,32 +139,15 @@ a.nav-link:hover {
   color: white;
 }
 
-.navbar {
-  min-height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 10px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  padding: 0 24px;
-}
-
-.nav-menu {
+.nav-menu-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 60px;
+  position: absolute;
 }
 
 .hamburger {
@@ -733,36 +733,46 @@ footer .footer_li_grey {
 @media only screen and (max-width: 428px) {
   .hamburger {
     display: block;
+    z-index: 3;
   }
-  .hamburger:active .bar:nth-child(2) {
+  .nav-menu-open + .hamburger > .bar {
+    background-color: #258AFF;
+    opacity: 0.9;
+  }
+  .nav-menu-open + .hamburger > .bar:nth-child(2) {
     opacity: 0;
   }
-  .hamburger:active .bar:nth-child(1) {
-    -webkit-transform: translateY(8px) rotate(45deg);
-            transform: translateY(8px) rotate(45deg);
+  .nav-menu-open + .hamburger > .bar:nth-child(1) {
+    -webkit-transform: translateY(5px) rotate(45deg);
+            transform: translateY(5px) rotate(45deg);
   }
-  .hamburger:active .bar:nth-child(3) {
-    -webkit-transform: translateY(-8px) rotate(-45deg);
-            transform: translateY(-8px) rotate(-45deg);
+  .nav-menu-open + .hamburger > .bar:nth-child(3) {
+    -webkit-transform: translateY(-4.5px) rotate(-45deg);
+            transform: translateY(-4.5px) rotate(-45deg);
   }
-  ul.nav-menu {
+  .nav-menu.nav-menu-open {
+    top: 0%;
+    opacity: 0.9;
+    border-radius: 5px;
+  }
+  .nav-menu.nav-menu-open > .nav-item:nth-child(1) {
+    margin-top: 30px;
+  }
+  .nav-menu {
     position: fixed;
-    left: -100%;
-    top: 70px;
+    top: -100%;
+    left: 0%;
     gap: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #258AFF;
+    background-color: #E4E4E4;
     width: 100%;
     text-align: center;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    z-index: 100;
-  }
-  ul.nav-menu:active {
-    left: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 2;
   }
   li.nav-item {
     margin: 10px 0;
@@ -809,16 +819,36 @@ footer .footer_li_grey {
   .cust_story .d_logos {
     gap: 60px;
   }
+  header .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   header .navbar div.logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: baseline;
-        -ms-flex-pack: baseline;
-            justify-content: baseline;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .navbar div.logo p {
+    font-size: 25px;
+  }
+  header .navbar div.logo img {
+    height: 21px;
+    width: 21px;
   }
   header button {
     display: block;
+    color: #258AFF;
+    background: none;
+    border: solid 2px #258AFF;
+    border-radius: 3px;
+    padding: 7px 15px;
+    font-family: "karla", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
   }
 }
 /*# sourceMappingURL=style.css.map */
