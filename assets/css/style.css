@@ -21,7 +21,7 @@
           align-items: center;
 }
 
-.button, .intro form .f_submit, .design1 button {
+.button, .intro form .f_submit, .design1 .div_design1 button {
   height: 28px;
   width: 111.19px;
   border: 1px solid #FC593B;
@@ -34,7 +34,7 @@
   margin-left: 3px;
 }
 
-.h2, .design1 h2, .design2 div h2, .cust_story div h2 {
+.h2, .design1 .div_design1 h2, .design2 div h2, .cust_story div h2 {
   color: white;
   font-weight: bold;
   font-size: 2em;
@@ -47,7 +47,7 @@
   letter-spacing: -0.02em;
 }
 
-.paragraphe_design, .design1 .p_design, .design2 div .p_design, .cust_story div .p_design {
+.paragraphe_design, .design1 .div_design1 .p_design, .design2 div .p_design, .cust_story div .p_design {
   font-size: 1em;
   font-weight: 600;
   padding-right: 190px;
@@ -55,7 +55,7 @@
   letter-spacing: 0.3em;
 }
 
-.paragraphe_weDesign, .design1 .p_weDesigned, .design2 div .p_weDesigned, .design2 .d2_design2 div p, .design2 .d2_design2 div .p_special, .cust_story div .p_weDesigned {
+.paragraphe_weDesign, .design1 .div_design1 .p_weDesigned, .design2 div .p_weDesigned, .design2 .d2_design2 div p, .design2 .d2_design2 div .p_special, .cust_story div .p_weDesigned {
   font-size: 1em;
   line-height: 2em;
   letter-spacing: 0.03em;
@@ -170,6 +170,7 @@ a.nav-link:hover {
 
 /* -------------------------------------- Make Landing page fast and easily ------------------------------------------ */
 .intro {
+  margin-top: 50px;
   margin-bottom: 55px;
 }
 
@@ -261,26 +262,29 @@ a.nav-link:hover {
   position: relative;
   margin-left: 0;
   margin-right: 0;
+  background-color: #258AFF;
+}
+
+.design1 .div_design1 {
   padding-left: 35px;
   padding-right: 35px;
   padding-top: 280px;
   text-align: left;
-  background-color: #258AFF;
 }
 
-.design1 p {
+.design1 .div_design1 p {
   color: #E4E4E4;
 }
 
-.design1 .p_design {
+.design1 .div_design1 .p_design {
   color: white;
 }
 
-.design1 .p_weDesigned {
+.design1 .div_design1 .p_weDesigned {
   color: white;
 }
 
-.design1 button {
+.design1 .div_design1 button {
   margin-bottom: 35px;
   margin-left: 0;
   color: #258AFF;
@@ -289,12 +293,12 @@ a.nav-link:hover {
   width: 181px;
 }
 
-.design1 div {
+.design1 .design1_img {
   position: absolute;
   z-index: 1;
   top: -130px;
-  margin-left: auto;
-  margin-right: auto;
+  right: 8%;
+  left: auto;
 }
 
 /* --------------------------------------------------- Design 2 ----------------------------------------------------- */
@@ -447,6 +451,7 @@ a.nav-link:hover {
           filter: grayscale(1);
 }
 
+/* ------------ MOBILE ---------- */
 @media only screen and (max-width: 428px) {
   .hamburger {
     display: block;
@@ -491,6 +496,37 @@ a.nav-link:hover {
   .services {
     margin-left: 35px;
     margin-right: 35px;
+  }
+}
+
+/* ------------ MOBILE - TABLETTE ---------- */
+@media screen and (min-width: 428px) and (max-width: 768px) {
+  /**/
+}
+
+/* ------------ TABLETTE ---------- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  section {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .intro {
+    padding: 0 40px;
+  }
+  .services {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .design1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .design2 {
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

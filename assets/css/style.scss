@@ -176,6 +176,7 @@ a.nav-link {
 
 .intro{
     @extend .flexVer;
+    margin-top: 50px;
     margin-bottom: 55px;
 
     p{
@@ -288,48 +289,49 @@ a.nav-link {
     position: relative;
     margin-left: 0;
     margin-right: 0;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 280px;
-    text-align: left;
     background-color: $blueColor;
 
-    p{
-        color: $greyColor1;
+    .div_design1{
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 280px;
+        text-align: left;
+
+        p{
+            color: $greyColor1;
+        }
+    
+        .p_design{
+            @extend .paragraphe_design;
+            color: $whiteColor;
+        }
+    
+        h2{
+            @extend .h2;
+        }
+    
+        .p_weDesigned{
+            @extend .paragraphe_weDesign;
+            color: $whiteColor;
+        }
+    
+        button{
+            margin-bottom: 35px;
+            margin-left: 0;
+            @extend .button;
+            color: $blueColor;
+            background-color: $whiteColor;
+            border-color: $whiteColor;
+            width: 181px;
+        }
     }
 
-    .p_design{
-        @extend .paragraphe_design;
-        color: $whiteColor;
-    }
-
-    h2{
-        @extend .h2;
-    }
-
-    .p_weDesigned{
-        @extend .paragraphe_weDesign;
-        color: $whiteColor;
-    }
-
-    button{
-        margin-bottom: 35px;
-        margin-left: 0;
-        @extend .button;
-        color: $blueColor;
-        background-color: $whiteColor;
-        border-color: $whiteColor;
-        width: 181px;
-    }
-
-    div{
+    .design1_img{
         position: absolute;
         z-index: 1;
         top: -130px;
-        margin-left: auto;
-        margin-right: auto;
-        // left: auto;
-        // right: auto;
+        right: 8%;
+        left: auto;
     }
 }
 
@@ -498,6 +500,9 @@ a.nav-link {
 }
 
 
+
+/* ------------ MOBILE ---------- */
+
 @media only screen and (max-width: 428px) {
     .hamburger {
         display: block;
@@ -536,8 +541,47 @@ a.nav-link {
         margin-left: 35px;
         margin-right: 35px;
     }
+
     .services{
         margin-left: 35px;
         margin-right: 35px;
+    }
+}
+
+/* ------------ MOBILE - TABLETTE ---------- */
+
+@media screen and (min-width: 428px) and (max-width: 768px){
+    /**/
+}
+
+/* ------------ TABLETTE ---------- */
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    body{
+        font-size: 16px;
+    }
+
+    section{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .intro{
+        padding: 0 40px;
+    }
+
+    .services{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .design1{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .design2{
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
