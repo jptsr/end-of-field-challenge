@@ -477,16 +477,224 @@ a.nav-link {
 
 /* ---------------------------------------------------------------price section*/
 .price_design {
-    height: 1337px;
-    width: 428px;
-    left: 0px;
-    top: 4424px;
-    border-radius: 0px;
     background-color: #192F48;
+    width: 428px;
+    padding: 0;
+    margin: 40px 0;
+    div.price_design {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0px;
+        padding: 30px;
+        h2, .p_design {
+            color: $whiteColor;
+        }
+        .p_design {
+            letter-spacing: 2.8125px;
+            line-height: 18px;
+            margin: 20px 0 40px 0;
+        }
+        h2 {
+            @extend .h2;
+            margin-bottom: 50px;
+        }
+    }
+    div.price_basic {
+        background: #2B405A;
+        border-radius: 6px;
+        padding: 30px 50px;
+        margin-bottom: 50px;
+        p, ul {
+            padding: 25px 0;
+        }
+        .basic {
+            font-size: 13px;
+            letter-spacing: 0.433333px;
+            color: $backgroundColor;
+        }
+        div.white_price {
+            color: $whiteColor;
+            .dollar {
+                font-family: "karla", sans-serif;
+                position: absolute;
+                line-height: 12px;
+            }
+            .number {
+                font-size: 30px;
+                letter-spacing: -2px;
+            }
+            .month {
+                font-size: 17px;
+                letter-spacing: -0.68px;
+            }
+        }
+        .p_weDesigned {
+            color: $backgroundColor;
+            line-height: 23px;
+            font-size: 12px;
+        }
+        ul {
+            color: $whiteColor;
+            line-height: 32px;
+            letter-spacing: 0.425px;
+            list-style: none;
+            li:before {
+                content: "\2713";
+                margin-right: 15px;
+            }
+            .li_grey {
+                text-decoration:line-through;
+                text-decoration-thickness: 1px;
+                color: $greyColor2;
+                
+            }
+        }
+        button {
+            background-color: $blueColor;
+            border-radius: 5px;
+            border: none;
+            color: $whiteColor;
+            width: 75%;
+            height: 30px;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.9px;
+        }
+        .credit {
+            font-size: 12px;
+            letter-spacing: -0.4px;
+            color: $greyColor2;
+        }
 
+    }
+
+    div.price_pro {
+        background: $whiteColor;
+        border-radius: 6px;
+        padding: 30px;
+        div.pro_pop {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            .pro {
+                font-size: 13px;
+                letter-spacing: 0.433333px;
+                color: $greyColor3;
+                font-weight: bold;
+            }
+            .popular {
+                border-radius: 13px;
+                background-color: $greenColor;
+                color: $whiteColor;
+                font-size: 15px;
+                letter-spacing: -0.5px;
+                height: 20px;
+                width: 64px;
+                padding: 0;
+                text-align: center;
+            }
+        }
+        p, ul {
+            padding: 25px 0;
+        }
+        div.black_price {
+            color: $blackColor;
+            .dollar {
+                font-family: "karla", sans-serif;
+                position: absolute;
+                line-height: 12px;
+            }
+            .number {
+                font-size: 30px;
+                letter-spacing: -2px;
+            }
+            .month {
+                font-size: 17px;
+                letter-spacing: -0.68px;
+            }
+        }
+        .p_weDesigned {
+            color: $greyColor3;
+            line-height: 23px;
+            font-size: 12px;
+        }
+        ul {
+            color: $blackColor;
+            line-height: 32px;
+            letter-spacing: 0.425px;
+            list-style: none;
+            li:before {
+                content: "\2713";
+                margin-right: 15px;
+            }
+        }
+        button {
+            background-color: $orangeColor;
+            border-radius: 5px;
+            border: none;
+            color: $whiteColor;
+            width: 75%;
+            height: 30px;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.9px;
+        }
+        .credit {
+            font-size: 12px;
+            letter-spacing: -0.4px;
+            color: $greyColor3;
+        }
+    }
 }
 
-/* ---------------------------------------------------------------------------media querries*/
+/*------------------------------------------------------------------------------------ footer */
+footer {
+    width: 428px;
+    padding: 0 30px;
+    margin: 40px 0;
+    div.footer_logo {
+        display: flex;
+        p {
+            font-family: "rubik", sans-serif;
+            letter-spacing: -1px;
+            padding-left: 5px;
+        }
+    }
+    .p_footer {
+        font-size: 12px;
+        line-height: 28px;
+        letter-spacing: 0.4px;
+        color: $greyColor3;
+        width: 300px;
+        margin-top: 20px;
+    }
+    
+    .black_logo {
+        margin-top: 20px;
+        margin-bottom: -25px;
+        img {
+            padding-left: 5px;
+        }
+    }
+
+    ul, li {
+        list-style: none;
+        padding: 30px 0 0 0;
+        li {
+            color: $greyColor4;
+            font-weight: bold;
+        }
+    }
+    .footer_li_grey{
+        color: $greyColor3;
+        font-size: 14px;
+        font-weight: bold;
+
+    }
+}
+
+
+/* -------------------------------------------------------------------------------media querries*/
 @media only screen and (max-width: 428px) {
     .hamburger {
         display: block;
@@ -530,4 +738,3 @@ a.nav-link {
         margin-right: 35px;
     }
 }
-
