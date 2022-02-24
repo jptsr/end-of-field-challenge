@@ -1,9 +1,65 @@
 @charset "UTF-8";
 @font-face {
   font-family: "karla";
-  src: url(../font/Karla/Karla-Regular.ttf);
+  src: url(../font/Karla/Karla-Regular.ttf) format("truetype");
   font-family: "rubik";
-  src: url(../font/Rubik/Rubik-Regular.ttf);
+  src: url(../font/Rubik/Rubik-Regular.ttf) format("truetype");
+}
+
+/* Variables */
+/* Useful to repeat */
+.flexVer, .intro, .design2 .d2_design2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button, .intro form .f_submit, .design1 button {
+  height: 32px;
+  width: 111.19px;
+  border: 1px solid #FC593B;
+  border-radius: 7px;
+  color: white;
+  background-color: #FC593B;
+  font-weight: 700;
+  font-size: 0.8em;
+  letter-spacing: -0.01em;
+  margin-left: 3px;
+}
+
+.h2, .design1 h2, .design2 div h2, .cust_story div h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  letter-spacing: -0.02em;
+}
+
+.h3, .services .d_services div h3, .design2 .d2_design2 h3 {
+  font-size: 1.35em;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.paragraphe_design, .design1 .p_design, .design2 div .p_design, .cust_story div .p_design {
+  font-size: 1em;
+  font-weight: 600;
+  padding-right: 190px;
+  line-height: 1.2em;
+  letter-spacing: 0.3em;
+}
+
+.paragraphe_weDesign, .design1 .p_weDesigned, .design2 div .p_weDesigned, .design2 .d2_design2 p, .design2 .d2_design2 .p_special, .cust_story div .p_weDesigned {
+  font-size: 1em;
+  line-height: 2em;
+  letter-spacing: 0.03em;
+  padding-right: 30px;
 }
 
 * {
@@ -13,6 +69,15 @@
   margin: 0;
 }
 
+body {
+  font-family: "karla", sans-serif;
+  font-size: 15px;
+  color: #1F1F1F;
+  background-color: #E5E5E5;
+  margin: 0 auto;
+}
+
+/* -------------------------------------- HEADER ------------------------------------------ */
 div.logo {
   width: 50.52px;
   height: 14px;
@@ -103,6 +168,256 @@ a.nav-link:hover {
   transition: all 0.3s ease-in-out;
 }
 
+/* -------------------------------------- Make Landing page fast and easily ------------------------------------------ */
+.intro {
+  margin-bottom: 55px;
+}
+
+.intro p {
+  text-align: center;
+  color: #666666;
+}
+
+.intro .p_present {
+  font-size: 0.7em;
+  font-weight: bold;
+  line-height: 0.8em;
+  letter-spacing: 0.4em;
+}
+
+.intro h1 {
+  font-size: 2.8em;
+  font-weight: 700;
+  line-height: 1.05em;
+  letter-spacing: -0.06em;
+  text-align: center;
+  color: #1F1F1F;
+  padding: auto 0;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.intro .p_create {
+  font-size: 1em;
+  line-height: 1.7em;
+  letter-spacing: 0em;
+  margin: 17px 0;
+}
+
+.intro form .f_enter {
+  color: #878B90;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-left: 10px;
+  height: 28px;
+  width: 133.14px;
+  margin-right: 3px;
+  font-size: 0.8em;
+  letter-spacing: -0.01em;
+}
+
+.intro .p_trusted {
+  color: #878B90;
+  font-size: 0.7em;
+  font-weight: 400;
+  line-height: 3em;
+  letter-spacing: 0em;
+}
+
+/* --------------------------------------------------- Services ----------------------------------------------------- */
+.services {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 125px;
+}
+
+.services img {
+  margin-top: -48px;
+  padding-right: 2em;
+  width: 25px;
+}
+
+.services .d_services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.services .d_services div p {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #666666;
+  letter-spacing: 0.05em;
+}
+
+/* --------------------------------------------------- Design 1 ----------------------------------------------------- */
+.design1 {
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 280px;
+  text-align: left;
+  background-color: #258AFF;
+}
+
+.design1 p {
+  color: #E4E4E4;
+}
+
+.design1 button {
+  margin-bottom: 35px;
+  margin-left: 0;
+  color: #258AFF;
+  background-color: white;
+  border-color: white;
+  width: 181px;
+}
+
+.design1 div {
+  position: absolute;
+  z-index: 1;
+  top: -130px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --------------------------------------------------- Design 2 ----------------------------------------------------- */
+.design2 {
+  margin-top: 75px;
+  border-bottom: 1px solid white;
+  margin-bottom: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.design2 div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.design2 div .p_design {
+  padding-right: 0;
+  color: #258AFF;
+}
+
+.design2 div h2 {
+  color: #1F1F1F;
+}
+
+.design2 div .p_weDesigned {
+  padding-right: 80px;
+  color: #666666;
+}
+
+.design2 .d2_design2 {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.design2 .d2_design2 span {
+  background-color: #258AFF;
+  border: 1px solid #258AFF;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.design2 .d2_design2 p {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.design2 .d2_design2 .p_special {
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 60px;
+}
+
+.design2 .d2_design2 div {
+  margin-bottom: 30px;
+}
+
+.design2 .d2_design2 div img {
+  width: 358px;
+  border-radius: 15px;
+}
+
+/* --------------------------------------------------- Customer Story ----------------------------------------------------- */
+.cust_story div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cust_story div .p_design {
+  padding-right: 0;
+}
+
+.cust_story div h2 {
+  color: #1F1F1F;
+}
+
+.cust_story div .p_weDesigned {
+  padding-right: 80px;
+}
+
+.cust_story div .d_story {
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.cust_story div .d_story .d_insideStory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cust_story div .d_story .d_insideStory img {
+  margin-top: 0px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.cust_story div .d_story .d_insideStory div h4 {
+  margin-bottom: 8px;
+}
+
+.cust_story div .d_story .d_insideStory div p {
+  margin-top: 0;
+}
+
+.cust_story .d_logos {
+  margin-top: 80px;
+  padding: auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.cust_story .d_logos img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
 @media only screen and (max-width: 428px) {
   .hamburger {
     display: block;
@@ -139,6 +454,14 @@ a.nav-link:hover {
   }
   li.nav-item {
     margin: 10px 0;
+  }
+  section {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .services {
+    margin-left: 35px;
+    margin-right: 35px;
   }
 }
 /*# sourceMappingURL=style.css.map */

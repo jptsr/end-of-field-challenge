@@ -1,15 +1,93 @@
 @font-face {
     font-family: "karla";
-    src: url(../font/Karla/Karla-Regular.ttf);
+    src: url(../font/Karla/Karla-Regular.ttf) format("truetype");
 
     font-family: "rubik";
-    src: url(../font/Rubik/Rubik-Regular.ttf);
+    src: url(../font/Rubik/Rubik-Regular.ttf) format("truetype");
 }
+
+/* Variables */
+
+$backgroundColor: #E5E5E5;
+$greyColor1: #E4E4E4;
+$greyColor2: #878B90;
+$greyColor3: #666666;
+$greyColor4: #1F1F1F;
+$whiteColor: white;
+$blackColor: black;
+$blueColor: #258AFF;
+$greenColor: #4EAB08;
+$orangeColor: #FC593B;
+
+/* Useful to repeat */
+
+.flexVer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button{
+    height: 32px;
+    width: 111.19px;
+    border: 1px solid $orangeColor;
+    border-radius: 7px;
+    color: $whiteColor;
+    background-color: $orangeColor;
+    font-weight: 700;
+    font-size: 0.8em;
+    letter-spacing: -0.01em;
+    margin-left: 3px;
+}
+
+.h2{
+    color: $whiteColor;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: -0.02em;
+}
+
+.h3{
+    font-size: 1.35em;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.paragraphe_design{
+    font-size: 1em;
+    font-weight: 600;
+    padding-right: 190px;
+    line-height: 1.2em;
+    letter-spacing: 0.3em;
+}
+
+.paragraphe_weDesign{
+    font-size: 1em;
+    line-height: 2em;
+    letter-spacing: 0.03em;
+    padding-right: 30px;
+}
+
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
+body{
+    font-family: "karla", sans-serif;
+    font-size: 15px;
+    color: #1F1F1F;
+    background-color: $backgroundColor;
+    margin: 0 auto;
+}
+
+
+
+/* -------------------------------------- HEADER ------------------------------------------ */
+
+
 
 div.logo {
     width: 50.52px;
@@ -89,7 +167,317 @@ a.nav-link {
     transition: all 0.3s ease-in-out;
 }
 
-@media only screen and(max-width:428px){
+
+
+/* -------------------------------------- Make Landing page fast and easily ------------------------------------------ */
+
+
+
+.intro{
+    @extend .flexVer;
+    margin-bottom: 55px;
+
+    p{
+        text-align: center;
+        color: $greyColor3;
+    }
+
+    .p_present{
+        font-size: 0.7em;
+        font-weight: bold;
+        line-height: 0.8em;
+        letter-spacing: 0.4em;
+    }
+
+    h1{
+        font-size: 2.8em;
+        font-weight: 700;
+        line-height: 1.05em;
+        letter-spacing: -0.06em;
+        text-align: center;
+        color: $greyColor4;
+        padding: auto 0;
+        margin-top: 20px;
+        margin-bottom: 0;
+        // margin-top: -16px;
+        // margin-bottom: -20px;
+        // white-space: pre;
+    }
+
+    .p_create{
+        font-size: 1em;
+        line-height: 1.7em;
+        letter-spacing: 0em;
+        margin: 17px 0;
+    }
+
+    form{
+        .f_enter{
+            color: $greyColor2;
+            background-color: $whiteColor;
+            border: 1px solid $whiteColor;
+            border-radius: 5px;
+            padding-left: 10px;
+            height: 28px;
+            width: 133.14px;
+            margin-right: 3px;
+            font-size: 0.8em;
+            letter-spacing: -0.01em;
+        }
+
+        .f_submit{
+            @extend .button;
+        }
+    }
+
+    .p_trusted{
+        color: $greyColor2;
+        font-size: 0.7em;
+        font-weight: 400;
+        line-height: 3em;
+        letter-spacing: 0em;
+    }
+}
+
+
+
+/* --------------------------------------------------- Services ----------------------------------------------------- */
+
+
+
+.services{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    margin-bottom: 125px;
+
+    img{
+        margin-top: -48px;
+        padding-right: 2em;
+        width: 25px;
+    }
+
+    .d_services{
+        // margin-top: -20px;
+        display: flex;
+        margin-bottom: 20px;
+        margin-left: 10px;
+
+        div{
+            h3{
+                @extend .h3;
+            }
+
+            p{
+                font-size: 1em;
+                line-height: 1.5em;
+                color: $greyColor3;
+                letter-spacing: 0.05em;
+            }
+        }
+    }
+}
+
+
+
+/* --------------------------------------------------- Design 1 ----------------------------------------------------- */
+
+
+.design1{
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 280px;
+    text-align: left;
+    background-color: $blueColor;
+
+    p{
+        color: $greyColor1;
+    }
+
+    .p_design{
+        @extend .paragraphe_design;
+    }
+
+    h2{
+        @extend .h2;
+    }
+
+    .p_weDesigned{
+        @extend .paragraphe_weDesign;
+    }
+
+    button{
+        margin-bottom: 35px;
+        margin-left: 0;
+        @extend .button;
+        color: $blueColor;
+        background-color: $whiteColor;
+        border-color: $whiteColor;
+        width: 181px;
+    }
+
+    div{
+        position: absolute;
+        z-index: 1;
+        top: -130px;
+        margin-left: auto;
+        margin-right: auto;
+        // left: auto;
+        // right: auto;
+    }
+}
+
+
+
+/* --------------------------------------------------- Design 2 ----------------------------------------------------- */
+
+
+.design2{
+    margin-top: 75px;
+    border-bottom: 1px solid $whiteColor;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    div{
+        padding-left: 10px;
+        padding-right: 10px;
+        .p_design{
+            @extend .paragraphe_design;
+            padding-right: 0;
+            color: $blueColor;
+        }
+    
+        h2{
+            @extend .h2;
+            color: $greyColor4;
+        }
+    
+        .p_weDesigned{
+            @extend .paragraphe_weDesign;
+            padding-right: 80px;
+            color: $greyColor3;
+        }
+    }
+    
+    
+
+    .d2_design2{
+        @extend .flexVer;
+        margin-top: 40px;
+        text-align: center;
+
+        span{
+            background-color: $blueColor;
+            border: 1px solid $blueColor;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        h3{
+            @extend .h3;
+        }
+
+        p{
+            @extend .paragraphe_weDesign;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .p_special{
+            @extend .paragraphe_weDesign;
+            padding-left: 60px;
+            padding-right: 60px;
+            margin-bottom: 60px;
+        }
+
+        div{
+            margin-bottom: 30px;
+            img{
+                width: 358px;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
+
+
+/* --------------------------------------------------- Customer Story ----------------------------------------------------- */
+
+
+
+.cust_story{
+    div{
+        padding-left: 10px;
+        padding-right: 10px;
+        .p_design{
+            @extend .paragraphe_design;
+            padding-right: 0;
+        }
+    
+        h2{
+            @extend .h2;
+            color: $greyColor4;
+        }
+    
+        .p_weDesigned{
+            @extend .paragraphe_weDesign;
+            padding-right: 80px;
+        }
+    }
+
+    div{
+        .d_story{
+            background-color: $whiteColor;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding-top: 20px;
+
+            .d_insideStory{
+                display: flex;
+
+                img{
+                    margin-top: 0px;
+                    margin-right: 15px;
+                    margin-left: 15px;
+                }
+
+                div{
+                    h4{
+                        margin-bottom: 8px;
+                    }
+    
+                    p{
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .d_logos{
+        margin-top: 80px;
+        padding: auto 0;
+        display: flex;
+        gap: 10px;
+        margin-bottom: 25px;
+        
+        img{
+            filter: grayscale(1);
+        }
+    }
+}
+
+
+@media only screen and (max-width: 428px) {
     .hamburger {
         display: block;
     }
@@ -121,5 +509,14 @@ a.nav-link {
 
     li.nav-item{
         margin: 10px 0;
+    }
+
+    section{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .services{
+        margin-left: 35px;
+        margin-right: 35px;
     }
 }
