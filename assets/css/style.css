@@ -804,6 +804,9 @@ footer .footer_li_grey {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .design1 .design1_img {
+    position: relative;
+  }
   .design2 {
     margin-left: 50px;
     margin-right: 50px;
