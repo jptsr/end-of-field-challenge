@@ -485,7 +485,7 @@ a.nav-link {
         display: flex;
         flex-direction: column;
         border-radius: 0px;
-        padding: 30px;
+        padding: 50px;
         h2, .p_design {
             color: $whiteColor;
         }
@@ -496,7 +496,9 @@ a.nav-link {
         }
         h2 {
             @extend .h2;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
+            font-size: 25px;
+            line-height: 35px;
         }
     }
     div.price_basic {
@@ -514,6 +516,8 @@ a.nav-link {
         }
         div.white_price {
             color: $whiteColor;
+            height: 50px;
+            display: flex;
             .dollar {
                 font-family: "karla", sans-serif;
                 position: absolute;
@@ -522,16 +526,21 @@ a.nav-link {
             .number {
                 font-size: 30px;
                 letter-spacing: -2px;
+                margin-left: 8px;
+                margin-bottom: 5px;
             }
             .month {
                 font-size: 17px;
                 letter-spacing: -0.68px;
+                margin-top: 15px;
+                margin-left: 2px;
             }
         }
         .p_weDesigned {
             color: $backgroundColor;
             line-height: 23px;
             font-size: 12px;
+            padding: 0;
         }
         ul {
             color: $whiteColor;
@@ -571,7 +580,7 @@ a.nav-link {
     div.price_pro {
         background: $whiteColor;
         border-radius: 6px;
-        padding: 30px;
+        padding: 40px;
         div.pro_pop {
             display: flex;
             justify-content: space-between;
@@ -599,6 +608,8 @@ a.nav-link {
         }
         div.black_price {
             color: $blackColor;
+            display: flex;
+            height: 50px;
             .dollar {
                 font-family: "karla", sans-serif;
                 position: absolute;
@@ -607,16 +618,20 @@ a.nav-link {
             .number {
                 font-size: 30px;
                 letter-spacing: -2px;
+                margin-left: 8px;
             }
             .month {
                 font-size: 17px;
                 letter-spacing: -0.68px;
+                margin-top: 15px;
+                margin-left: 2px;
             }
         }
         .p_weDesigned {
             color: $greyColor3;
             line-height: 23px;
             font-size: 12px;
+            padding: 0;
         }
         ul {
             color: $blackColor;

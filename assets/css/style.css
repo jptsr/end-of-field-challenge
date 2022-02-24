@@ -434,7 +434,7 @@ a.nav-link:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 0px;
-  padding: 30px;
+  padding: 50px;
 }
 
 .price_design div.price_design h2, .price_design div.price_design .p_design {
@@ -448,7 +448,9 @@ a.nav-link:hover {
 }
 
 .price_design div.price_design h2 {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  font-size: 25px;
+  line-height: 35px;
 }
 
 .price_design div.price_basic {
@@ -470,6 +472,10 @@ a.nav-link:hover {
 
 .price_design div.price_basic div.white_price {
   color: white;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .price_design div.price_basic div.white_price .dollar {
@@ -481,17 +487,22 @@ a.nav-link:hover {
 .price_design div.price_basic div.white_price .number {
   font-size: 30px;
   letter-spacing: -2px;
+  margin-left: 8px;
+  margin-bottom: 5px;
 }
 
 .price_design div.price_basic div.white_price .month {
   font-size: 17px;
   letter-spacing: -0.68px;
+  margin-top: 15px;
+  margin-left: 2px;
 }
 
 .price_design div.price_basic .p_weDesigned {
   color: #E5E5E5;
   line-height: 23px;
   font-size: 12px;
+  padding: 0;
 }
 
 .price_design div.price_basic ul {
@@ -533,7 +544,7 @@ a.nav-link:hover {
 .price_design div.price_pro {
   background: white;
   border-radius: 6px;
-  padding: 30px;
+  padding: 40px;
 }
 
 .price_design div.price_pro div.pro_pop {
@@ -573,6 +584,10 @@ a.nav-link:hover {
 
 .price_design div.price_pro div.black_price {
   color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
 }
 
 .price_design div.price_pro div.black_price .dollar {
@@ -584,17 +599,21 @@ a.nav-link:hover {
 .price_design div.price_pro div.black_price .number {
   font-size: 30px;
   letter-spacing: -2px;
+  margin-left: 8px;
 }
 
 .price_design div.price_pro div.black_price .month {
   font-size: 17px;
   letter-spacing: -0.68px;
+  margin-top: 15px;
+  margin-left: 2px;
 }
 
 .price_design div.price_pro .p_weDesigned {
   color: #666666;
   line-height: 23px;
   font-size: 12px;
+  padding: 0;
 }
 
 .price_design div.price_pro ul {
