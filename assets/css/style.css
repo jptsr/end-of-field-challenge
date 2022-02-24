@@ -78,11 +78,11 @@ body {
 }
 
 /* -------------------------------------- HEADER ------------------------------------------ */
+header button {
+  display: none;
+}
+
 div.logo {
-  width: 50.52px;
-  height: 14px;
-  left: 35px;
-  top: 9px;
   font-family: "rubik", sans-sérif;
   font-style: normal;
   font-weight: normal;
@@ -93,7 +93,6 @@ div.logo {
 }
 
 div.logo img {
-  position: absolute;
   width: 9.52px;
   height: 9.52px;
   left: 35px;
@@ -101,7 +100,6 @@ div.logo img {
 }
 
 div.logo p {
-  position: absolute;
   height: 14px;
   left: 11.52%;
   right: 80.02%;
@@ -467,7 +465,7 @@ a.nav-link:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 0px;
-  padding: 50px;
+  padding: 29px;
 }
 
 .price_design div.price_design h2, .price_design div.price_design .p_design {
@@ -810,6 +808,17 @@ footer .footer_li_grey {
   }
   .cust_story .d_logos {
     gap: 60px;
+  }
+  header .navbar div.logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
+  header button {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */
