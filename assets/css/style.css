@@ -272,6 +272,14 @@ a.nav-link:hover {
   color: #E4E4E4;
 }
 
+.design1 .p_design {
+  color: white;
+}
+
+.design1 .p_weDesigned {
+  color: white;
+}
+
 .design1 button {
   margin-bottom: 35px;
   margin-left: 0;

@@ -300,6 +300,7 @@ a.nav-link {
 
     .p_design{
         @extend .paragraphe_design;
+        color: $whiteColor;
     }
 
     h2{
@@ -308,6 +309,7 @@ a.nav-link {
 
     .p_weDesigned{
         @extend .paragraphe_weDesign;
+        color: $whiteColor;
     }
 
     button{
