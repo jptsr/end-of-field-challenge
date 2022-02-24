@@ -1,0 +1,815 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "karla";
+  src: url(../font/Karla/Karla-Regular.ttf) format("truetype");
+  font-family: "rubik";
+  src: url(../font/Rubik/Rubik-Regular.ttf) format("truetype");
+}
+
+/* Variables */
+/* Useful to repeat */
+.flexVer, .intro, .services, .design2 .d2_design2, .design2 .d2_design2 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button, .intro form .f_submit, .design1 .div_design1 button {
+  height: 28px;
+  width: 111.19px;
+  border: 1px solid #FC593B;
+  border-radius: 7px;
+  color: white;
+  background-color: #FC593B;
+  font-weight: 700;
+  font-size: 0.8em;
+  letter-spacing: -0.01em;
+  margin-left: 3px;
+}
+
+.h2, .design1 .div_design1 h2, .design2 div h2, .cust_story div h2, .price_design div.price_design h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  letter-spacing: -0.02em;
+}
+
+.h3, .services .d_services div h3, .design2 .d2_design2 div h3 {
+  font-size: 1.35em;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.paragraphe_design, .design1 .div_design1 .p_design, .design2 div .p_design, .cust_story div .p_design {
+  font-size: 1em;
+  font-weight: 600;
+  padding-right: 190px;
+  line-height: 1.2em;
+  letter-spacing: 0.3em;
+}
+
+.paragraphe_weDesign, .design1 .div_design1 .p_weDesigned, .design2 div .p_weDesigned, .design2 .d2_design2 div p, .design2 .d2_design2 div .p_special, .cust_story div .p_weDesigned {
+  font-size: 1em;
+  line-height: 2em;
+  letter-spacing: 0.03em;
+  padding-right: 30px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0, auto;
+  padding: 0;
+}
+
+body {
+  font-family: "karla", sans-serif;
+  font-size: 15px;
+  color: #1F1F1F;
+  background-color: #E5E5E5;
+  margin: 0 auto;
+}
+
+/* -------------------------------------- HEADER ------------------------------------------ */
+div.logo {
+  width: 50.52px;
+  height: 14px;
+  left: 35px;
+  top: 9px;
+  font-family: "rubik", sans-sérif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -1px;
+  color: #1F1F1F;
+}
+
+div.logo img {
+  position: absolute;
+  width: 9.52px;
+  height: 9.52px;
+  left: 35px;
+  top: 11.5px;
+}
+
+div.logo p {
+  position: absolute;
+  height: 14px;
+  left: 11.52%;
+  right: 80.02%;
+  top: 9px;
+}
+
+li.nav-item {
+  list-style: none;
+}
+
+a.nav-link {
+  font-size: 15px;
+  text-decoration: none;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  color: #262626;
+}
+
+a.nav-link:hover {
+  color: white;
+}
+
+.navbar {
+  min-height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 15px;
+  height: 2px;
+  margin: 3px auto;
+  padding: 0;
+  background-color: #258AFF;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* -------------------------------------- Make Landing page fast and easily ------------------------------------------ */
+.intro {
+  margin-top: 50px;
+  margin-bottom: 55px;
+}
+
+.intro p {
+  text-align: center;
+  color: #666666;
+}
+
+.intro .p_present {
+  font-size: 0.7em;
+  font-weight: bold;
+  line-height: 0.8em;
+  letter-spacing: 0.4em;
+}
+
+.intro h1 {
+  font-size: 2.8em;
+  font-weight: 700;
+  line-height: 1.05em;
+  letter-spacing: -0.06em;
+  text-align: center;
+  color: #1F1F1F;
+  padding: auto 0;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.intro .p_create {
+  font-size: 1em;
+  line-height: 1.7em;
+  letter-spacing: 0em;
+  margin: 17px 0;
+}
+
+.intro form .f_enter {
+  color: #878B90;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-left: 10px;
+  height: 28px;
+  width: 133.14px;
+  margin-right: 3px;
+  font-size: 0.8em;
+  letter-spacing: -0.01em;
+}
+
+.intro .p_trusted {
+  color: #878B90;
+  font-size: 0.7em;
+  font-weight: 400;
+  line-height: 3em;
+  letter-spacing: 0em;
+}
+
+/* --------------------------------------------------- Services ----------------------------------------------------- */
+.services {
+  margin-bottom: 125px;
+}
+
+.services .d_services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.services .d_services img {
+  width: 25px;
+  margin-top: -50px;
+  -webkit-filter: saturate(4);
+          filter: saturate(4);
+}
+
+.services .d_services div {
+  padding-left: 30px;
+}
+
+.services .d_services div p {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #666666;
+  letter-spacing: 0.05em;
+}
+
+/* --------------------------------------------------- Design 1 ----------------------------------------------------- */
+.design1 {
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #258AFF;
+}
+
+.design1 .div_design1 {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 280px;
+  text-align: left;
+}
+
+.design1 .div_design1 p {
+  color: #E4E4E4;
+}
+
+.design1 .div_design1 .p_design {
+  color: white;
+}
+
+.design1 .div_design1 .p_weDesigned {
+  color: white;
+}
+
+.design1 .div_design1 button {
+  margin-bottom: 35px;
+  margin-left: 0;
+  color: #258AFF;
+  background-color: white;
+  border-color: white;
+  width: 181px;
+}
+
+.design1 .design1_img {
+  position: absolute;
+  z-index: 1;
+  top: -130px;
+  right: 8%;
+  left: auto;
+}
+
+/* --------------------------------------------------- Design 2 ----------------------------------------------------- */
+.design2 {
+  margin-top: 75px;
+  border-bottom: 1px solid white;
+  margin-bottom: 80px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.design2 div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.design2 div .p_design {
+  padding-right: 0;
+  color: #258AFF;
+}
+
+.design2 div h2 {
+  color: #1F1F1F;
+}
+
+.design2 div .p_weDesigned {
+  padding-right: 80px;
+  color: #666666;
+}
+
+.design2 .d2_design2 {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.design2 .d2_design2 div span {
+  background-color: #258AFF;
+  border: 1px solid #258AFF;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.design2 .d2_design2 div span img {
+  width: 26px;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.design2 .d2_design2 div p {
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #666666;
+}
+
+.design2 .d2_design2 div .p_special {
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 60px;
+}
+
+.design2 .d2_design2 div {
+  margin-bottom: 30px;
+}
+
+.design2 .d2_design2 div img {
+  width: 358px;
+  border-radius: 15px;
+  -webkit-filter: drop-shadow(0 0 0.75rem #b4b4b4);
+          filter: drop-shadow(0 0 0.75rem #b4b4b4);
+}
+
+/* --------------------------------------------------- Customer Story ----------------------------------------------------- */
+.cust_story div {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 50px;
+}
+
+.cust_story div .p_design {
+  padding-right: 0;
+  color: #258AFF;
+}
+
+.cust_story div h2 {
+  color: #1F1F1F;
+}
+
+.cust_story div .p_weDesigned {
+  padding-right: 80px;
+  color: #666666;
+}
+
+.cust_story div .d_story {
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.cust_story div .d_story .d_insideStory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cust_story div .d_story .d_insideStory img {
+  margin-right: 15px;
+  margin-top: 20px;
+  height: 60px;
+}
+
+.cust_story div .d_story .d_insideStory div {
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.cust_story div .d_story .d_insideStory div h4 {
+  margin-bottom: 7px;
+}
+
+.cust_story div .d_story .d_insideStory div p {
+  margin-top: 0;
+  font-size: 0.8em;
+  color: #666666;
+}
+
+.cust_story .d_logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 80px;
+  margin-bottom: 25px;
+  gap: 25px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.cust_story .d_logos img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+/* ---------------------------------------------------------------price section*/
+.price_design {
+  background-color: #192F48;
+  padding: 0 35px;
+  margin: 40px 0;
+}
+
+.price_design div.price_design {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 0px;
+  padding: 50px;
+}
+
+.price_design div.price_design h2, .price_design div.price_design .p_design {
+  color: white;
+}
+
+.price_design div.price_design .p_design {
+  letter-spacing: 2.8125px;
+  line-height: 18px;
+  margin: 20px 0 40px 0;
+}
+
+.price_design div.price_design h2 {
+  margin-bottom: 40px;
+  font-size: 25px;
+  line-height: 35px;
+}
+
+.price_design div.price_basic {
+  background: #2B405A;
+  border-radius: 6px;
+  padding: 30px 50px;
+  margin-bottom: 50px;
+}
+
+.price_design div.price_basic p, .price_design div.price_basic ul {
+  padding: 25px 0;
+}
+
+.price_design div.price_basic .basic {
+  font-size: 13px;
+  letter-spacing: 0.433333px;
+  color: #E5E5E5;
+}
+
+.price_design div.price_basic div.white_price {
+  color: white;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.price_design div.price_basic div.white_price .dollar {
+  font-family: "karla", sans-serif;
+  position: absolute;
+  line-height: 12px;
+}
+
+.price_design div.price_basic div.white_price .number {
+  font-size: 30px;
+  letter-spacing: -2px;
+  margin-left: 8px;
+  margin-bottom: 5px;
+}
+
+.price_design div.price_basic div.white_price .month {
+  font-size: 17px;
+  letter-spacing: -0.68px;
+  margin-top: 15px;
+  margin-left: 2px;
+}
+
+.price_design div.price_basic .p_weDesigned {
+  color: #E5E5E5;
+  line-height: 23px;
+  font-size: 12px;
+  padding: 0;
+}
+
+.price_design div.price_basic ul {
+  color: white;
+  line-height: 32px;
+  letter-spacing: 0.425px;
+  list-style: none;
+}
+
+.price_design div.price_basic ul li:before {
+  content: "\2713";
+  margin-right: 15px;
+}
+
+.price_design div.price_basic ul .li_grey {
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  color: #878B90;
+}
+
+.price_design div.price_basic button {
+  background-color: #258AFF;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  width: 75%;
+  height: 30px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.9px;
+}
+
+.price_design div.price_basic .credit {
+  font-size: 12px;
+  letter-spacing: -0.4px;
+  color: #878B90;
+}
+
+.price_design div.price_pro {
+  background: white;
+  border-radius: 6px;
+  padding: 40px;
+}
+
+.price_design div.price_pro div.pro_pop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.price_design div.price_pro div.pro_pop .pro {
+  font-size: 13px;
+  letter-spacing: 0.433333px;
+  color: #666666;
+  font-weight: bold;
+}
+
+.price_design div.price_pro div.pro_pop .popular {
+  border-radius: 13px;
+  background-color: #4EAB08;
+  color: white;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+  height: 20px;
+  width: 64px;
+  padding: 0;
+  text-align: center;
+}
+
+.price_design div.price_pro p, .price_design div.price_pro ul {
+  padding: 25px 0;
+}
+
+.price_design div.price_pro div.black_price {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+}
+
+.price_design div.price_pro div.black_price .dollar {
+  font-family: "karla", sans-serif;
+  position: absolute;
+  line-height: 12px;
+}
+
+.price_design div.price_pro div.black_price .number {
+  font-size: 30px;
+  letter-spacing: -2px;
+  margin-left: 8px;
+}
+
+.price_design div.price_pro div.black_price .month {
+  font-size: 17px;
+  letter-spacing: -0.68px;
+  margin-top: 15px;
+  margin-left: 2px;
+}
+
+.price_design div.price_pro .p_weDesigned {
+  color: #666666;
+  line-height: 23px;
+  font-size: 12px;
+  padding: 0;
+}
+
+.price_design div.price_pro ul {
+  color: black;
+  line-height: 32px;
+  letter-spacing: 0.425px;
+  list-style: none;
+}
+
+.price_design div.price_pro ul li:before {
+  content: "\2713";
+  margin-right: 15px;
+}
+
+.price_design div.price_pro button {
+  background-color: #FC593B;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  width: 75%;
+  height: 30px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.9px;
+}
+
+.price_design div.price_pro .credit {
+  font-size: 12px;
+  letter-spacing: -0.4px;
+  color: #666666;
+}
+
+/*------------------------------------------------------------------------------------ footer */
+footer {
+  padding: 0 30px;
+  margin: 40px 35px;
+}
+
+footer div.footer_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer div.footer_logo p {
+  font-family: "rubik", sans-serif;
+  letter-spacing: -1px;
+  padding-left: 5px;
+}
+
+footer .p_footer {
+  font-size: 12px;
+  line-height: 28px;
+  letter-spacing: 0.4px;
+  color: #666666;
+  width: 300px;
+  margin-top: 20px;
+}
+
+footer .black_logo {
+  margin-top: 20px;
+  margin-bottom: -25px;
+}
+
+footer .black_logo img {
+  padding-left: 5px;
+}
+
+footer ul, footer li {
+  list-style: none;
+  padding: 30px 0 0 0;
+}
+
+footer ul li, footer li li {
+  color: #1F1F1F;
+  font-weight: bold;
+}
+
+footer .footer_li_grey {
+  color: #666666;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* ------------ MOBILE ---------- */
+@media only screen and (max-width: 428px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger:active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger:active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger:active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  ul.nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #258AFF;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    z-index: 100;
+  }
+  ul.nav-menu:active {
+    left: 0;
+  }
+  li.nav-item {
+    margin: 10px 0;
+  }
+  section {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .services {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+}
+
+/* ------------ MOBILE - TABLETTE ---------- */
+@media screen and (min-width: 428px) and (max-width: 768px) {
+  /**/
+}
+
+/* ------------ TABLETTE ---------- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  section {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .intro {
+    padding: 0 40px;
+  }
+  .services {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .design1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .design2 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .cust_story .d_logos {
+    gap: 60px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
