@@ -417,6 +417,17 @@ a.nav-link:hover {
           filter: grayscale(1);
 }
 
+/* ---------------------------------------------------------------price section*/
+.price_design {
+  height: 1337px;
+  width: 428px;
+  left: 0px;
+  top: 4424px;
+  border-radius: 0px;
+  background-color: #192F48;
+}
+
+/* ---------------------------------------------------------------------------media querries*/
 @media only screen and (max-width: 428px) {
   .hamburger {
     display: block;

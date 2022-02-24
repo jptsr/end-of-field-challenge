@@ -3,8 +3,7 @@ const navMenu = document.getElementById('nav-menu');
 console.log(hamburger)
 
 hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
+  navMenu.classList.toggle("nav-menu");
 })
 
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
