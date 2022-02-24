@@ -454,8 +454,7 @@ a.nav-link:hover {
 /* ---------------------------------------------------------------price section*/
 .price_design {
   background-color: #192F48;
-  width: 428px;
-  padding: 0;
+  padding: 0 35px;
   margin: 40px 0;
 }
 
@@ -682,9 +681,8 @@ a.nav-link:hover {
 
 /*------------------------------------------------------------------------------------ footer */
 footer {
-  width: 428px;
   padding: 0 30px;
-  margin: 40px 0;
+  margin: 40px 35px;
 }
 
 footer div.footer_logo {
