@@ -827,7 +827,7 @@ footer {
 
         .div_design1{
             z-index: 0;
-            @extend .flexVer;
+            //@extend .flexVer;
             padding-top: 0;
         }
     }
@@ -839,7 +839,7 @@ footer {
 
     .cust_story{
         .d_logos{
-            gap: 60px;
+            gap: 20px;
         }
     }
 }
