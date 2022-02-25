@@ -97,7 +97,8 @@ header {
     min-height: 30px;
     display: flex;
     align-items: center;
-    padding: 0 24px;
+    justify-content: space-between;
+    padding: 0 35px;
     margin-top: 20px;
 }
 
@@ -128,7 +129,6 @@ li.nav-item {
 }
 
 a.nav-link {
-    font-size: 15px;
     text-decoration: none;
     transition: 0.7s ease;
     color: #262626;
@@ -493,11 +493,13 @@ a.nav-link {
 /* ---------------------------------------------------------------price section*/
 .price_design {
     background-color: #192F48;
-    padding: 0 35px;
-    margin: 40px 0;
+    padding: 60px 35px;
+    margin: 0;
     div.price_design {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
         border-radius: 0px;
         padding: 29px;
         h2, .p_design {
@@ -506,11 +508,10 @@ a.nav-link {
         .p_design {
             letter-spacing: 2.8125px;
             line-height: 18px;
-            margin: 20px 0 40px 0;
+            margin-bottom: 40px;
         }
         h2 {
             @extend .h2;
-            margin-bottom: 40px;
             font-size: 25px;
             line-height: 35px;
         }
@@ -519,10 +520,10 @@ a.nav-link {
         background: #2B405A;
         border-radius: 6px;
         padding: 30px 50px;
-        margin-bottom: 50px;
-        p, ul {
-            padding: 25px 0;
-        }
+        width: 310px;
+            p, ul {
+                padding: 25px 0;
+            }
         .basic {
             font-size: 13px;
             letter-spacing: 0.433333px;
@@ -567,7 +568,6 @@ a.nav-link {
             }
             .li_grey {
                 text-decoration:line-through;
-                text-decoration-thickness: 1px;
                 color: $greyColor2;
                 
             }
@@ -595,7 +595,8 @@ a.nav-link {
     div.price_pro {
         background: $whiteColor;
         border-radius: 6px;
-        padding: 40px;
+        padding: 30px 50px; 
+        width: 310px;
         div.pro_pop {
             display: flex;
             justify-content: space-between;
@@ -719,58 +720,60 @@ footer {
         color: $greyColor3;
         font-size: 14px;
         font-weight: bold;
-
+        margin-bottom: 20px;
     }
+}
+
+/* ---------------------------------------- Hamburger menu until 768px -----------------------------------*/
+@media only screen and (max-width: 768px) {
+    .hamburger {
+            display: block;
+            z-index: 3;
+        }
+        .nav-menu-open + .hamburger > .bar {
+            background-color: $blueColor;
+            opacity: 0.9;
+        }
+        .nav-menu-open + .hamburger > .bar:nth-child(2) {
+            opacity: 0;
+        }
+        .nav-menu-open + .hamburger > .bar:nth-child(1) {
+            transform: translateY(5px) rotate(45deg);
+        }
+        .nav-menu-open + .hamburger > .bar:nth-child(3) {
+            transform: translateY(-5px) rotate(-45deg);
+        }
+
+        .nav-menu.nav-menu-open {
+            top: 0%;
+            opacity: 0.9;
+            border-radius: 5px;
+            >.nav-item:nth-child(1){
+                margin-top: 30px;
+            }
+        }
+
+        .nav-menu {
+            position: fixed;
+            top: -100%;
+            left: 0%;
+            gap: 0;
+            flex-direction: column;
+            background-color: $greyColor1;
+            width: 100%;
+            text-align: center;
+            transition: 0.5s;
+            z-index: 2;
+        }
+
+        li.nav-item{
+            margin: 10px 0;
+        }
 }
 
 /* ------------ MOBILE ---------- */
 
-
 @media only screen and (max-width: 428px) {
-    .hamburger {
-        display: block;
-        z-index: 3;
-    }
-    .nav-menu-open + .hamburger > .bar {
-        background-color: $blueColor;
-        opacity: 0.9;
-    }
-    .nav-menu-open + .hamburger > .bar:nth-child(2) {
-        opacity: 0;
-    }
-    .nav-menu-open + .hamburger > .bar:nth-child(1) {
-        transform: translateY(5px) rotate(45deg);
-    }
-    .nav-menu-open + .hamburger > .bar:nth-child(3) {
-        transform: translateY(-4.5px) rotate(-45deg);
-    }
-
-    .nav-menu.nav-menu-open {
-        top: 0%;
-        opacity: 0.9;
-        border-radius: 5px;
-        >.nav-item:nth-child(1){
-            margin-top: 30px;
-        }
-    }
-
-    .nav-menu {
-        position: fixed;
-        top: -100%;
-        left: 0%;
-        gap: 0;
-        flex-direction: column;
-        background-color: $greyColor1;
-        width: 100%;
-        text-align: center;
-        transition: 0.5s;
-        z-index: 2;
-    }
-
-    li.nav-item{
-        margin: 10px 0;
-    }
-
     section{
         margin-left: 35px;
         margin-right: 35px;
@@ -785,12 +788,11 @@ footer {
 /* ------------ MOBILE - TABLETTE ---------- */
 
 @media screen and (min-width: 428px) and (max-width: 768px){
-    /**/
 }
 
 /* ------------ TABLETTE ---------- */
 
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 768px){
     body{
         font-size: 16px;
     }
@@ -824,13 +826,46 @@ footer {
             gap: 60px;
         }
     }
-    header {
+    div.price_design{
+        .header_price{
+            text-align: center;
+            width: 100%;
+        }
+        h2{
+            font-size: 56px;
+        }
+    }
+}
+
+
+/* ---------------------------------- MOBILE - DESKTOP --------------------------------------------*/
+
+@media screen and (min-width: 428px){
+}
+
+/* ---------------------------------------- nav bar appears -----------------------------------------------------*/
+@media screen and (min-width: 768px){
+    header{
         .navbar{
-            .nav-menu{
-                    display: flex;
-                    gap: 40px;
-                    margin-left: 20px;
+            button{
+                display: block;
+                background: none;
+                border: solid 2px $blueColor;
+                border-radius: 3px;
+                padding: 7px 20px;
+                font: {
+                    family: "karla", sans-serif;
+                    size: 16px;
+                    style: normal;
+                    weight: bold;
                 }
+                color: $blueColor;
+                letter-spacing: -1px;
+            }   
+            .nav-menu{
+                display: flex;
+                gap: 40px;
+            }
             div.logo{
                 display: flex;
                 align-items: center;
@@ -843,19 +878,19 @@ footer {
                 }
             }
         }
-        button{
-            display: block;
-            color: $blueColor;
-            background: none;
-            border: solid 2px $blueColor;
-            border-radius: 3px;
-            padding: 7px 15px;
-            margin-left: auto;
-            font: {
-                family: "karla", sans-serif;
-                size: 16px;
-                weight: bold;
-            }
+    }
+}
+
+/* ----------------------------------------------------------------- Desktop -------------------------------- */
+@media screen and (min-width: 1024px){
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap:50px;
+        .foot2{
+            display: flex;
+            gap:80px;
         }
     }
 }

@@ -90,7 +90,10 @@ header button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 24px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 35px;
   margin-top: 20px;
 }
 
@@ -125,7 +128,6 @@ li.nav-item {
 }
 
 a.nav-link {
-  font-size: 15px;
   text-decoration: none;
   -webkit-transition: 0.7s ease;
   transition: 0.7s ease;
@@ -449,18 +451,20 @@ a.nav-link:hover {
 /* ---------------------------------------------------------------price section*/
 .price_design {
   background-color: #192F48;
-  padding: 0 35px;
-  margin: 40px 0;
+  padding: 60px 35px;
+  margin: 0;
 }
 
 .price_design div.price_design {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
   border-radius: 0px;
   padding: 29px;
 }
@@ -472,11 +476,10 @@ a.nav-link:hover {
 .price_design div.price_design .p_design {
   letter-spacing: 2.8125px;
   line-height: 18px;
-  margin: 20px 0 40px 0;
+  margin-bottom: 40px;
 }
 
 .price_design div.price_design h2 {
-  margin-bottom: 40px;
   font-size: 25px;
   line-height: 35px;
 }
@@ -485,7 +488,7 @@ a.nav-link:hover {
   background: #2B405A;
   border-radius: 6px;
   padding: 30px 50px;
-  margin-bottom: 50px;
+  width: 310px;
 }
 
 .price_design div.price_basic p, .price_design div.price_basic ul {
@@ -547,7 +550,6 @@ a.nav-link:hover {
 
 .price_design div.price_basic ul .li_grey {
   text-decoration: line-through;
-  text-decoration-thickness: 1px;
   color: #878B90;
 }
 
@@ -572,7 +574,8 @@ a.nav-link:hover {
 .price_design div.price_pro {
   background: white;
   border-radius: 6px;
-  padding: 40px;
+  padding: 30px 50px;
+  width: 310px;
 }
 
 .price_design div.price_pro div.pro_pop {
@@ -724,10 +727,11 @@ footer .footer_li_grey {
   color: #666666;
   font-size: 14px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
-/* ------------ MOBILE ---------- */
-@media only screen and (max-width: 428px) {
+/* ---------------------------------------- Hamburger menu until 768px -----------------------------------*/
+@media only screen and (max-width: 768px) {
   .hamburger {
     display: block;
     z-index: 3;
@@ -744,8 +748,8 @@ footer .footer_li_grey {
             transform: translateY(5px) rotate(45deg);
   }
   .nav-menu-open + .hamburger > .bar:nth-child(3) {
-    -webkit-transform: translateY(-4.5px) rotate(-45deg);
-            transform: translateY(-4.5px) rotate(-45deg);
+    -webkit-transform: translateY(-5px) rotate(-45deg);
+            transform: translateY(-5px) rotate(-45deg);
   }
   .nav-menu.nav-menu-open {
     top: 0%;
@@ -774,6 +778,10 @@ footer .footer_li_grey {
   li.nav-item {
     margin: 10px 0;
   }
+}
+
+/* ------------ MOBILE ---------- */
+@media only screen and (max-width: 428px) {
   section {
     margin-left: 35px;
     margin-right: 35px;
@@ -785,12 +793,8 @@ footer .footer_li_grey {
 }
 
 /* ------------ MOBILE - TABLETTE ---------- */
-@media screen and (min-width: 428px) and (max-width: 768px) {
-  /**/
-}
-
 /* ------------ TABLETTE ---------- */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   body {
     font-size: 16px;
   }
@@ -816,12 +820,36 @@ footer .footer_li_grey {
   .cust_story .d_logos {
     gap: 60px;
   }
+  div.price_design .header_price {
+    text-align: center;
+    width: 100%;
+  }
+  div.price_design h2 {
+    font-size: 56px;
+  }
+}
+
+/* ---------------------------------- MOBILE - DESKTOP --------------------------------------------*/
+/* ---------------------------------------- nav bar appears -----------------------------------------------------*/
+@media screen and (min-width: 768px) {
+  header .navbar button {
+    display: block;
+    background: none;
+    border: solid 2px #258AFF;
+    border-radius: 3px;
+    padding: 7px 20px;
+    font-family: "karla", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    color: #258AFF;
+    letter-spacing: -1px;
+  }
   header .navbar .nav-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 40px;
-    margin-left: 20px;
   }
   header .navbar div.logo {
     display: -webkit-box;
@@ -838,17 +866,27 @@ footer .footer_li_grey {
     height: 21px;
     width: 21px;
   }
-  header button {
-    display: block;
-    color: #258AFF;
-    background: none;
-    border: solid 2px #258AFF;
-    border-radius: 3px;
-    padding: 7px 15px;
-    margin-left: auto;
-    font-family: "karla", sans-serif;
-    font-size: 16px;
-    font-weight: bold;
+}
+
+/* ----------------------------------------------------------------- Desktop -------------------------------- */
+@media screen and (min-width: 1024px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 50px;
+  }
+  footer .foot2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 80px;
   }
 }
 /*# sourceMappingURL=style.css.map */
