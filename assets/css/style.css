@@ -34,7 +34,7 @@
   margin-left: 3px;
 }
 
-.h2, .design1 .div_design1 h2, .design2 div h2, .cust_story div h2, .price_design div.price_design h2 {
+.h2, .design1 .div_design1 h2, .design2 div h2, .cust_story div h2 {
   color: white;
   font-weight: bold;
   font-size: 2em;
@@ -94,7 +94,7 @@ header button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 35px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .logo {
@@ -131,11 +131,11 @@ a.nav-link {
   text-decoration: none;
   -webkit-transition: 0.7s ease;
   transition: 0.7s ease;
-  color: #262626;
+  color: #1F1F1F;
 }
 
 a.nav-link:hover {
-  color: white;
+  color: #258AFF;
 }
 
 .nav-menu-open {
@@ -479,11 +479,6 @@ a.nav-link:hover {
   margin-bottom: 40px;
 }
 
-.price_design div.price_design h2 {
-  font-size: 25px;
-  line-height: 35px;
-}
-
 .price_design div.price_basic {
   background: #2B405A;
   border-radius: 6px;
@@ -705,12 +700,13 @@ footer .p_footer {
 }
 
 footer .black_logo {
-  margin-top: 20px;
+  margin-top: 38px;
   margin-bottom: -25px;
 }
 
 footer .black_logo img {
   padding-left: 5px;
+  height: 16px;
 }
 
 footer ul, footer li {
@@ -731,7 +727,7 @@ footer .footer_li_grey {
 }
 
 /* ---------------------------------------- Hamburger menu until 768px -----------------------------------*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .hamburger {
     display: block;
     z-index: 3;
@@ -793,6 +789,15 @@ footer .footer_li_grey {
 }
 
 /* ------------ MOBILE - TABLETTE ---------- */
+@media screen and (min-width: 428px) and (max-width: 768px) {
+  div.price_design .header_price {
+    width: 100%;
+  }
+  div.price_design .header_price h2 {
+    font-size: 23px;
+  }
+}
+
 /* ------------ TABLETTE ---------- */
 @media screen and (min-width: 768px) {
   body {
@@ -824,14 +829,14 @@ footer .footer_li_grey {
     text-align: center;
     width: 100%;
   }
-  div.price_design h2 {
-    font-size: 56px;
+  div.price_design .header_price h2 {
+    font-size: 48px;
   }
 }
 
 /* ---------------------------------- MOBILE - DESKTOP --------------------------------------------*/
 /* ---------------------------------------- nav bar appears -----------------------------------------------------*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   header .navbar button {
     display: block;
     background: none;
@@ -850,14 +855,16 @@ footer .footer_li_grey {
     display: -ms-flexbox;
     display: flex;
     gap: 40px;
+    margin-right: auto;
   }
   header .navbar div.logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-right: 60px;
   }
   header .navbar div.logo p {
     font-size: 25px;
@@ -870,6 +877,10 @@ footer .footer_li_grey {
 
 /* ----------------------------------------------------------------- Desktop -------------------------------- */
 @media screen and (min-width: 1024px) {
+  header .navbar {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -887,6 +898,21 @@ footer .footer_li_grey {
     display: -ms-flexbox;
     display: flex;
     gap: 80px;
+  }
+}
+
+/*----------------------------------------- margin 1200px ---------------------------------------*/
+@media screen and (min-width: 870px) {
+  header .navbar {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header .navbar {
+    margin-left: 165px;
+    margin-right: 165px;
   }
 }
 /*# sourceMappingURL=style.css.map */

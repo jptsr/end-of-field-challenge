@@ -99,7 +99,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 35px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .logo {
@@ -131,9 +131,9 @@ li.nav-item {
 a.nav-link {
     text-decoration: none;
     transition: 0.7s ease;
-    color: #262626;
+    color: $greyColor4;
     &:hover {
-        color: white;
+        color: $blueColor;
     }
 }
 
@@ -510,11 +510,6 @@ a.nav-link {
             line-height: 18px;
             margin-bottom: 40px;
         }
-        h2 {
-            @extend .h2;
-            font-size: 25px;
-            line-height: 35px;
-        }
     }
     div.price_basic {
         background: #2B405A;
@@ -701,10 +696,11 @@ footer {
     }
     
     .black_logo {
-        margin-top: 20px;
+        margin-top: 38px;
         margin-bottom: -25px;
         img {
             padding-left: 5px;
+            height: 16px;
         }
     }
 
@@ -725,7 +721,7 @@ footer {
 }
 
 /* ---------------------------------------- Hamburger menu until 768px -----------------------------------*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .hamburger {
             display: block;
             z-index: 3;
@@ -788,6 +784,14 @@ footer {
 /* ------------ MOBILE - TABLETTE ---------- */
 
 @media screen and (min-width: 428px) and (max-width: 768px){
+    div.price_design{
+        .header_price{
+            width: 100%;
+            h2{
+                font-size: 23px;
+            }
+        }
+    }
 }
 
 /* ------------ TABLETTE ---------- */
@@ -830,9 +834,9 @@ footer {
         .header_price{
             text-align: center;
             width: 100%;
-        }
-        h2{
-            font-size: 56px;
+            h2{
+                font-size: 48px;
+            }
         }
     }
 }
@@ -840,11 +844,12 @@ footer {
 
 /* ---------------------------------- MOBILE - DESKTOP --------------------------------------------*/
 
-@media screen and (min-width: 428px){
+@media screen and (min-width: 428px) {
+    
 }
 
 /* ---------------------------------------- nav bar appears -----------------------------------------------------*/
-@media screen and (min-width: 768px){
+@media screen and (min-width: 767px){
     header{
         .navbar{
             button{
@@ -865,10 +870,12 @@ footer {
             .nav-menu{
                 display: flex;
                 gap: 40px;
+                margin-right: auto;
             }
             div.logo{
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
+                padding-right: 60px;
                 p{
                     font-size: 25px;
                 }
@@ -883,6 +890,12 @@ footer {
 
 /* ----------------------------------------------------------------- Desktop -------------------------------- */
 @media screen and (min-width: 1024px){
+    header {
+        .navbar{
+            margin-left: 75px;
+            margin-right: 75px;
+        }
+    }
     footer{
         display: flex;
         justify-content: space-evenly;
@@ -891,6 +904,25 @@ footer {
         .foot2{
             display: flex;
             gap:80px;
+        }
+    }
+}
+
+/*----------------------------------------- margin 1200px ---------------------------------------*/
+@media screen and (min-width: 870px){
+    header {
+        .navbar{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    header {
+        .navbar{
+            margin-left: 165px;
+            margin-right: 165px;
         }
     }
 }
