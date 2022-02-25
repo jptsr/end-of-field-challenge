@@ -175,6 +175,7 @@ a.nav-link:hover {
   text-align: center;
   color: #666666;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .intro .p_present {
@@ -851,6 +852,9 @@ footer .footer_li_grey {
     margin-left: 35px;
     margin-right: 35px;
   }
+  .intro {
+    margin-bottom: 90px;
+  }
   .services {
     margin-left: 35px;
     margin-right: 35px;
@@ -862,6 +866,18 @@ footer .footer_li_grey {
   .design2 {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .design2 .div_txts div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
   .design2 div img {
     width: 456px;
@@ -879,6 +895,13 @@ footer .footer_li_grey {
   }
   div.price_design .header_price h2 {
     font-size: 23px;
+  }
+}
+
+/* ---------- imgs section service ---------- */
+@media screen and (min-width: 573px) {
+  .services .d_services img {
+    margin-top: -75px;
   }
 }
 
@@ -929,6 +952,7 @@ footer .footer_li_grey {
   }
   .intro {
     padding: 0 40px;
+    margin-bottom: 90px;
   }
   .intro h1 {
     margin-bottom: 10px;
@@ -952,6 +976,9 @@ footer .footer_li_grey {
   .services {
     margin-left: 50px;
     margin-right: 50px;
+  }
+  .services .d_services img {
+    margin-top: -80px;
   }
   .design1 {
     padding-left: 30px;
@@ -1008,6 +1035,9 @@ footer .footer_li_grey {
     margin-left: 50px;
     margin-right: 50px;
   }
+  .intro {
+    margin-top: 100px;
+  }
   .intro .p_present {
     margin-bottom: 20px;
   }
@@ -1033,14 +1063,57 @@ footer .footer_li_grey {
     padding-right: 0;
     margin-top: -290px;
   }
-  .design2 {
+}
+
+@media only screen and (min-width: 1024px) {
+  section {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  header .navbar {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+  .services {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .services .d_services img {
+    margin-top: -85px;
+  }
+  .design1 {
+    padding-left: 58px;
+    padding-right: 58px;
+  }
+  .design2 {
+    margin-left: 70px;
+    margin-right: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
   }
   .design2 .div_txts {
     padding-right: 30px;
     margin-right: -20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 15px;
   }
   .design2 .div_txts div h2 {
     padding-right: 40px;
@@ -1102,44 +1175,10 @@ footer .footer_li_grey {
   }
   .design2 .div_txts .d2_design2 .d2_design2_d2 {
     padding: 0;
-    margin-top: -35px;
+    margin-top: -43px;
   }
   .design2 div img {
-    height: 550px;
     border-radius: 20px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  section {
-    margin-left: 70px;
-    margin-right: 70px;
-  }
-  header .navbar {
-    margin-left: 75px;
-    margin-right: 75px;
-  }
-  .services {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-left: 70px;
-    margin-right: 70px;
-  }
-  .services .d_services img {
-    margin-top: -85px;
-  }
-  .design1 {
-    padding-left: 58px;
-    padding-right: 58px;
-  }
-  .design2 {
-    margin-left: 70px;
-    margin-right: 70px;
   }
   .cust_story .div_cust div p {
     padding-right: 0;
@@ -1176,6 +1215,9 @@ footer .footer_li_grey {
     margin-left: 165px;
     margin-right: 165px;
   }
+  .intro {
+    margin-top: 120;
+  }
   .intro form .f_enter {
     height: 55px;
     width: 275px;
@@ -1188,6 +1230,9 @@ footer .footer_li_grey {
   .services {
     margin-left: 165px;
     margin-right: 165px;
+  }
+  .services .d_services img {
+    margin-top: -140px;
   }
   .design1 {
     padding-left: 148px;
@@ -1220,11 +1265,14 @@ footer .footer_li_grey {
             justify-content: space-between;
     gap: 150px;
   }
+  .cust_story {
+    margin-top: 150px;
+  }
   .cust_story .div_cust {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: -70px;
   }
   .cust_story .div_cust .div_cust_txt {
@@ -1250,7 +1298,7 @@ footer .footer_li_grey {
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 50px;
-    margin-bottom: -10px;
+    margin-bottom: 30px;
   }
   .cust_story .div_cust div .d_story .d_insideStory {
     margin-top: 20px;
@@ -1271,7 +1319,7 @@ footer .footer_li_grey {
             flex-direction: column;
   }
   .cust_story .div_cust .cust_story_dekstop .d_story {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -1284,12 +1332,11 @@ footer .footer_li_grey {
     margin-top: 20px;
   }
   .cust_story .div_cust .cust_story_dekstop .d_story .d_insideStory div {
-    margin-bottom: -30px;
-    margin-top: 20px;
+    margin-top: 70px;
   }
   .cust_story .div_cust .cust_story_dekstop .d_story .d_insideStory div h4 {
     margin-bottom: 10px;
-    margin-top: 4px;
+    margin-top: -40px;
   }
   .cust_story .div_cust .cust_story_dekstop .d_story .d_insideStory div p {
     margin-top: 0;
@@ -1298,6 +1345,7 @@ footer .footer_li_grey {
     color: #666666;
   }
   .d_logos {
+    padding-top: 70px;
     padding-bottom: 70px;
   }
   div.price_design .header_price {
@@ -1306,6 +1354,12 @@ footer .footer_li_grey {
   }
   div.price_design .header_price h2 {
     font-size: 48px;
+  }
+}
+
+@media only screen and (min-width: 1416px) {
+  .services .d_services img {
+    margin-top: -115px;
   }
 }
 /*# sourceMappingURL=style.css.map */
