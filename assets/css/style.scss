@@ -438,58 +438,60 @@ a.nav-link {
 
 
 .cust_story{
-    div{
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-bottom: 50px;
-        .p_design{
-            @extend .paragraphe_design;
-            padding-right: 0;
-            color: $blueColor;
+    .div_cust{
+        div{
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 50px;
+            .p_design{
+                @extend .paragraphe_design;
+                padding-right: 0;
+                color: $blueColor;
+            }
+        
+            h2{
+                @extend .h2;
+                color: $greyColor4;
+            }
+        
+            .p_weDesigned{
+                @extend .paragraphe_weDesign;
+                padding-right: 80px;
+                color: $greyColor3;
+            }
         }
     
-        h2{
-            @extend .h2;
-            color: $greyColor4;
-        }
+        div{
+            .d_story{
+                background-color: $whiteColor;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                padding-top: 30px;
+                padding-left: 25px;
+                padding-right: 25px;
     
-        .p_weDesigned{
-            @extend .paragraphe_weDesign;
-            padding-right: 80px;
-            color: $greyColor3;
-        }
-    }
-
-    div{
-        .d_story{
-            background-color: $whiteColor;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            padding-top: 30px;
-            padding-left: 25px;
-            padding-right: 25px;
-
-            .d_insideStory{
-                display: flex;
-
-                img{
-                    margin-right: 15px;
-                    margin-top: 20px;
-                    height: 60px;
-                }
-
-                div{
-                    margin-bottom: 15px;
-                    margin-top: 20px;
-
-                    h4{
-                        margin-bottom: 7px;
+                .d_insideStory{
+                    display: flex;
+    
+                    img{
+                        margin-right: 15px;
+                        margin-top: 20px;
+                        height: 60px;
                     }
     
-                    p{
-                        margin-top: 0;
-                        font-size: 0.8em;
-                        color: $greyColor3;
+                    div{
+                        margin-bottom: 15px;
+                        margin-top: 20px;
+    
+                        h4{
+                            margin-bottom: 7px;
+                        }
+        
+                        p{
+                            margin-top: 0;
+                            font-size: 0.8em;
+                            color: $greyColor3;
+                        }
                     }
                 }
             }
@@ -799,7 +801,7 @@ footer {
 
 /* ------------ TABLETTE ---------- */
 
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 768px){
     body{
         font-size: 16px;
     }
@@ -908,7 +910,6 @@ footer {
     }
 
     .design1{
-
         .design1_img{
             position: static;
             z-index: 0;
@@ -991,11 +992,124 @@ footer {
         }
 
         div{
-
             img{
                 height: 550px;
                 border-radius: 20px;
-                // margin-top: 25em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    section{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .services{
+        display: flex;
+        flex-direction: row;
+        margin-left: 70px;
+        margin-right: 70px;
+
+        .d_services{
+            img{
+                margin-top: -85px;
+            }
+        }
+    }
+
+    .design1{
+        padding-left: 58px;
+        padding-right: 58px;
+    }
+
+    .design2{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .cust_story{
+        .div_cust{
+            div{
+                p{
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    body{
+        font-size: 18px;
+    }
+
+    section{
+        margin-left: 165px;
+        margin-right: 165px;
+    }
+
+    .intro{
+        h1{
+            padding: 0 350px;
+        }
+        form{
+            .f_enter{
+                height: 55px;
+                width: 275px;
+                padding-left: 24px;
+            }
+
+            .f_submit{
+                height: 55px;
+                width: 209px;
+            }
+        }
+    }
+
+    .services{
+        margin-left: 165px;
+        margin-right: 165px;
+    }
+
+    .design1{
+        padding-left: 148px;
+        padding-right: 148px;
+
+        .design1_img{
+            img{
+                width: 550px;
+            }
+        }
+
+        .div_design1{
+            padding-left: 100px;
+
+            h2{
+                padding-right: 200px;
+            }
+
+            .p_weDesigned{
+                padding-right: 80px;
+            }
+
+            button{
+                height: 55px;
+                width: 209px;
+            }
+        }
+    }
+
+    .design2{
+        margin-left: 165px;
+        margin-right: 165px;
+        gap: 100px;
+
+        .div_txts{
+            .d2_design2{
+                justify-content: space-between;
+                gap: 150px;
             }
         }
     }

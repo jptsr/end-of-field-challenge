@@ -34,7 +34,7 @@
   margin-left: 3px;
 }
 
-.h2, .design1 .div_design1 h2, .design2 .div_txts div h2, .cust_story div h2, .price_design div.price_design h2 {
+.h2, .design1 .div_design1 h2, .design2 .div_txts div h2, .cust_story .div_cust div h2, .price_design div.price_design h2 {
   color: white;
   font-weight: bold;
   font-size: 2em;
@@ -47,7 +47,7 @@
   letter-spacing: -0.02em;
 }
 
-.paragraphe_design, .design1 .div_design1 .p_design, .design2 .div_txts div .p_design, .cust_story div .p_design {
+.paragraphe_design, .design1 .div_design1 .p_design, .design2 .div_txts div .p_design, .cust_story .div_cust div .p_design {
   font-size: 1em;
   font-weight: 600;
   padding-right: 190px;
@@ -55,7 +55,7 @@
   letter-spacing: 0.3em;
 }
 
-.paragraphe_weDesign, .design1 .div_design1 .p_weDesigned, .design2 .div_txts div .p_weDesigned, .design2 .div_txts .d2_design2 div p, .design2 .div_txts .d2_design2 div .p_special, .cust_story div .p_weDesigned {
+.paragraphe_weDesign, .design1 .div_design1 .p_weDesigned, .design2 .div_txts div .p_weDesigned, .design2 .div_txts .d2_design2 div p, .design2 .div_txts .d2_design2 div .p_special, .cust_story .div_cust div .p_weDesigned {
   font-size: 1em;
   line-height: 2em;
   letter-spacing: 0.03em;
@@ -388,27 +388,27 @@ a.nav-link:hover {
 }
 
 /* --------------------------------------------------- Customer Story ----------------------------------------------------- */
-.cust_story div {
+.cust_story .div_cust div {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 50px;
 }
 
-.cust_story div .p_design {
+.cust_story .div_cust div .p_design {
   padding-right: 0;
   color: #258AFF;
 }
 
-.cust_story div h2 {
+.cust_story .div_cust div h2 {
   color: #1F1F1F;
 }
 
-.cust_story div .p_weDesigned {
+.cust_story .div_cust div .p_weDesigned {
   padding-right: 80px;
   color: #666666;
 }
 
-.cust_story div .d_story {
+.cust_story .div_cust div .d_story {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -417,28 +417,28 @@ a.nav-link:hover {
   padding-right: 25px;
 }
 
-.cust_story div .d_story .d_insideStory {
+.cust_story .div_cust div .d_story .d_insideStory {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.cust_story div .d_story .d_insideStory img {
+.cust_story .div_cust div .d_story .d_insideStory img {
   margin-right: 15px;
   margin-top: 20px;
   height: 60px;
 }
 
-.cust_story div .d_story .d_insideStory div {
+.cust_story .div_cust div .d_story .d_insideStory div {
   margin-bottom: 15px;
   margin-top: 20px;
 }
 
-.cust_story div .d_story .d_insideStory div h4 {
+.cust_story .div_cust div .d_story .d_insideStory div h4 {
   margin-bottom: 7px;
 }
 
-.cust_story div .d_story .d_insideStory div p {
+.cust_story .div_cust div .d_story .d_insideStory div p {
   margin-top: 0;
   font-size: 0.8em;
   color: #666666;
@@ -796,7 +796,7 @@ footer .footer_li_grey {
 }
 
 /* ------------ TABLETTE ---------- */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   body {
     font-size: 16px;
   }
@@ -977,6 +977,95 @@ footer .footer_li_grey {
   .design2 div img {
     height: 550px;
     border-radius: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  section {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .services .d_services img {
+    margin-top: -85px;
+  }
+  .design1 {
+    padding-left: 58px;
+    padding-right: 58px;
+  }
+  .design2 {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .cust_story .div_cust div p {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+  section {
+    margin-left: 165px;
+    margin-right: 165px;
+  }
+  .intro h1 {
+    padding: 0 350px;
+  }
+  .intro form .f_enter {
+    height: 55px;
+    width: 275px;
+    padding-left: 24px;
+  }
+  .intro form .f_submit {
+    height: 55px;
+    width: 209px;
+  }
+  .services {
+    margin-left: 165px;
+    margin-right: 165px;
+  }
+  .design1 {
+    padding-left: 148px;
+    padding-right: 148px;
+  }
+  .design1 .design1_img img {
+    width: 550px;
+  }
+  .design1 .div_design1 {
+    padding-left: 100px;
+  }
+  .design1 .div_design1 h2 {
+    padding-right: 200px;
+  }
+  .design1 .div_design1 .p_weDesigned {
+    padding-right: 80px;
+  }
+  .design1 .div_design1 button {
+    height: 55px;
+    width: 209px;
+  }
+  .design2 {
+    margin-left: 165px;
+    margin-right: 165px;
+    gap: 100px;
+  }
+  .design2 .div_txts .d2_design2 {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 150px;
   }
 }
 /*# sourceMappingURL=style.css.map */
