@@ -8,7 +8,7 @@
 
 /* Variables */
 
-$backgroundColor: #E5E5E5;
+$backgroundColor: #E3EEF8;
 $greyColor1: #E4E4E4;
 $greyColor2: #878B90;
 $greyColor3: #666666;
@@ -347,75 +347,86 @@ a.nav-link {
     margin-left: 25px;
     margin-right: 25px;
 
-    div{
-        padding-left: 10px;
-        padding-right: 10px;
-        .p_design{
-            @extend .paragraphe_design;
-            padding-right: 0;
-            color: $blueColor;
-        }
-    
-        h2{
-            @extend .h2;
-            color: $greyColor4;
-        }
-    
-        .p_weDesigned{
-            @extend .paragraphe_weDesign;
-            padding-right: 80px;
-            color: $greyColor3;
-        }
-    }
-    
-    .d2_design2{
+    .div_txts{
         @extend .flexVer;
-        margin-top: 40px;
-        text-align: center;
 
         div{
             @extend .flexVer;
-            span{
-                background-color: $blueColor;
-                border: 1px solid $blueColor;
-                border-radius: 50%;
-                width: 50px;
-                height: 50px;
-                display: flex;
-                justify-content: space-around;
-
-                img{
-                    width: 26px;
-                    filter: brightness(0) invert(1);
-                }
-            }
+            align-items: left;
+            padding-left: 10px;
+            padding-right: 10px;
     
-            h3{
-                @extend .h3;
+            .p_design{
+                @extend .paragraphe_design;
+                padding-left: 0;
+                color: $blueColor;
+                margin-bottom: 5px;
             }
-    
-            p{
+        
+            h2{
+                @extend .h2;
+                color: $greyColor4;
+                margin-bottom: 5px;
+            }
+        
+            .p_weDesigned{
                 @extend .paragraphe_weDesign;
-                padding-left: 50px;
-                padding-right: 50px;
+                padding-right: 80px;
                 color: $greyColor3;
             }
+        }
+        
+        .d2_design2{
+            @extend .flexVer;
+            margin-top: 40px;
+            text-align: center;
     
-            .p_special{
-                @extend .paragraphe_weDesign;
-                padding-left: 60px;
-                padding-right: 60px;
-                margin-bottom: 60px;
+            div{
+                @extend .flexVer;
+                span{
+                    background-color: $blueColor;
+                    border: 1px solid $blueColor;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: space-around;
+    
+                    img{
+                        width: 26px;
+                        filter: brightness(0) invert(1);
+                    }
+                }
+        
+                h3{
+                    @extend .h3;
+                }
+        
+                p{
+                    @extend .paragraphe_weDesign;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    color: $greyColor3;
+                }
+        
+                .p_special{
+                    @extend .paragraphe_weDesign;
+                    padding-left: 60px;
+                    padding-right: 60px;
+                    margin-bottom: -20px;
+                }
             }
         }
+    }    
 
-        div{
-            margin-bottom: 30px;
-            img{
-                width: 358px;
-                border-radius: 15px;
-                filter: drop-shadow(0 0 0.75rem $dropShadow);
-            }
+    div{
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 338px;
+            border-radius: 15px;
+            filter: drop-shadow(0 0 0.75rem $dropShadow);
         }
     }
 }
@@ -800,6 +811,30 @@ footer {
 
     .intro{
         padding: 0 40px;
+
+        h1{
+            margin-bottom: 10px;
+        }
+
+        .p_create{
+            margin-bottom: 30px;
+        }
+
+        form{
+            margin-bottom: 10px;
+
+            .f_enter{
+                height: 34px;
+                width: 180px;
+                margin-right: 7px;
+            }
+
+            .f_submit{
+                height: 34px;
+                width: 130px;
+                margin-left: 7px;
+            }
+        }
     }
 
     .services{
@@ -814,32 +849,154 @@ footer {
         justify-content: center;
         align-items: center;
 
-        .design1_img{
-            position: relative;
-            z-index: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-            // right: 8%;
-            // left: auto;
-        }
-
         .div_design1{
-            z-index: 0;
-            //@extend .flexVer;
-            padding-top: 0;
+            button{
+                height: 35px;
+                margin-bottom: 40px;
+            }
         }
     }
 
     .design2{
         margin-left: 50px;
         margin-right: 50px;
+
+        .div_txts{
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+
+                .p_design{
+                    text-align: left;
+                }
+            }
+        }
     }
 
     .cust_story{
         .d_logos{
-            gap: 20px;
+            gap: 20;
+            justify-content: space-around;
+
+            img{
+                margin: 0;
+            }
+        }
+    }
+}
+
+/* -------------------- */
+
+@media screen and (min-width: 870px){
+    .intro{
+        .p_present{
+            margin-bottom: 20px;
+        }
+
+        h1{
+            margin-bottom: 20px;
+        }
+
+        .p_create{
+            margin-bottom: 40px;
+        }
+
+        form{
+            margin-bottom: 20px;
+        }
+    }
+
+    .design1{
+
+        .design1_img{
+            position: static;
+            z-index: 0;
+
+            img{
+                margin: 0;
+                padding: 0 auto;
+            }
+        }
+
+        .div_design1{
+            padding-left: 20px;
+            padding-right: 0;
+            margin-top: -290px;
+        }
+    }
+
+    .design2{
+        display: flex;
+
+        .div_txts{
+            padding-right: 30px;
+            margin-right: -20px;
+
+            div{
+                h2{
+                    padding-right: 40px;
+                }
+
+                .p_weDesigned{
+                    padding-right: 0px;
+                }
+            }
+
+            .d2_design2{
+                display: flex;
+                flex-direction: row;
+
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    padding: 0;
+
+                    span{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 45px;
+                        height: 45px;
+
+                        img{
+                            width: 28px;
+                        }
+                    }
+
+                    p{
+                        padding-left: 0;
+                        padding-right: 15px;
+                        text-align: left;
+                        font-size: 0.9em;
+                    }
+
+                    h3{
+                        margin-bottom: 0;
+                    }
+
+                    .p_special{
+                        padding-left: 0;
+                        padding-right: 15px;
+                        font-size: 0.9em;
+                    }
+                }
+
+                .d2_design2_d2{
+                    padding: 0;
+                    margin-top: -35px;
+                }
+            }
+        }
+
+        div{
+
+            img{
+                height: 550px;
+                border-radius: 20px;
+                // margin-top: 25em;
+            }
         }
     }
 }

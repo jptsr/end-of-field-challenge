@@ -8,7 +8,7 @@
 
 /* Variables */
 /* Useful to repeat */
-.flexVer, .intro, .services, .design2 .d2_design2, .design2 .d2_design2 div {
+.flexVer, .intro, .services, .design2 .div_txts, .design2 .div_txts div, .design2 .div_txts .d2_design2, .design2 .div_txts .d2_design2 div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,20 +34,20 @@
   margin-left: 3px;
 }
 
-.h2, .design1 .div_design1 h2, .design2 div h2, .cust_story div h2, .price_design div.price_design h2 {
+.h2, .design1 .div_design1 h2, .design2 .div_txts div h2, .cust_story div h2, .price_design div.price_design h2 {
   color: white;
   font-weight: bold;
   font-size: 2em;
   letter-spacing: -0.02em;
 }
 
-.h3, .services .d_services div h3, .design2 .d2_design2 div h3 {
+.h3, .services .d_services div h3, .design2 .div_txts .d2_design2 div h3 {
   font-size: 1.35em;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
-.paragraphe_design, .design1 .div_design1 .p_design, .design2 div .p_design, .cust_story div .p_design {
+.paragraphe_design, .design1 .div_design1 .p_design, .design2 .div_txts div .p_design, .cust_story div .p_design {
   font-size: 1em;
   font-weight: 600;
   padding-right: 190px;
@@ -55,7 +55,7 @@
   letter-spacing: 0.3em;
 }
 
-.paragraphe_weDesign, .design1 .div_design1 .p_weDesigned, .design2 div .p_weDesigned, .design2 .d2_design2 div p, .design2 .d2_design2 div .p_special, .cust_story div .p_weDesigned {
+.paragraphe_weDesign, .design1 .div_design1 .p_weDesigned, .design2 .div_txts div .p_weDesigned, .design2 .div_txts .d2_design2 div p, .design2 .div_txts .d2_design2 div .p_special, .cust_story div .p_weDesigned {
   font-size: 1em;
   line-height: 2em;
   letter-spacing: 0.03em;
@@ -73,7 +73,7 @@ body {
   font-family: "karla", sans-serif;
   font-size: 15px;
   color: #1F1F1F;
-  background-color: #E5E5E5;
+  background-color: #E3EEF8;
   margin: 0 auto;
 }
 
@@ -310,31 +310,36 @@ a.nav-link:hover {
   margin-right: 25px;
 }
 
-.design2 div {
+.design2 .div_txts div {
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.design2 div .p_design {
-  padding-right: 0;
+.design2 .div_txts div .p_design {
+  padding-left: 0;
   color: #258AFF;
+  margin-bottom: 5px;
 }
 
-.design2 div h2 {
+.design2 .div_txts div h2 {
   color: #1F1F1F;
+  margin-bottom: 5px;
 }
 
-.design2 div .p_weDesigned {
+.design2 .div_txts div .p_weDesigned {
   padding-right: 80px;
   color: #666666;
 }
 
-.design2 .d2_design2 {
+.design2 .div_txts .d2_design2 {
   margin-top: 40px;
   text-align: center;
 }
 
-.design2 .d2_design2 div span {
+.design2 .div_txts .d2_design2 div span {
   background-color: #258AFF;
   border: 1px solid #258AFF;
   border-radius: 50%;
@@ -347,30 +352,36 @@ a.nav-link:hover {
       justify-content: space-around;
 }
 
-.design2 .d2_design2 div span img {
+.design2 .div_txts .d2_design2 div span img {
   width: 26px;
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
 }
 
-.design2 .d2_design2 div p {
+.design2 .div_txts .d2_design2 div p {
   padding-left: 50px;
   padding-right: 50px;
   color: #666666;
 }
 
-.design2 .d2_design2 div .p_special {
+.design2 .div_txts .d2_design2 div .p_special {
   padding-left: 60px;
   padding-right: 60px;
-  margin-bottom: 60px;
+  margin-bottom: -20px;
 }
 
-.design2 .d2_design2 div {
+.design2 div {
   margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.design2 .d2_design2 div img {
-  width: 358px;
+.design2 div img {
+  width: 338px;
   border-radius: 15px;
   -webkit-filter: drop-shadow(0 0 0.75rem #b4b4b4);
           filter: drop-shadow(0 0 0.75rem #b4b4b4);
@@ -500,7 +511,7 @@ a.nav-link:hover {
 .price_design div.price_basic .basic {
   font-size: 13px;
   letter-spacing: 0.433333px;
-  color: #E5E5E5;
+  color: #E3EEF8;
 }
 
 .price_design div.price_basic div.white_price {
@@ -532,7 +543,7 @@ a.nav-link:hover {
 }
 
 .price_design div.price_basic .p_weDesigned {
-  color: #E5E5E5;
+  color: #E3EEF8;
   line-height: 23px;
   font-size: 12px;
   padding: 0;
@@ -796,6 +807,25 @@ footer .footer_li_grey {
   .intro {
     padding: 0 40px;
   }
+  .intro h1 {
+    margin-bottom: 10px;
+  }
+  .intro .p_create {
+    margin-bottom: 30px;
+  }
+  .intro form {
+    margin-bottom: 10px;
+  }
+  .intro form .f_enter {
+    height: 34px;
+    width: 180px;
+    margin-right: 7px;
+  }
+  .intro form .f_submit {
+    height: 34px;
+    width: 130px;
+    margin-left: 7px;
+  }
   .services {
     margin-left: 50px;
     margin-right: 50px;
@@ -813,9 +843,104 @@ footer .footer_li_grey {
         -ms-flex-align: center;
             align-items: center;
   }
+  .design1 .div_design1 button {
+    height: 35px;
+    margin-bottom: 40px;
+  }
+  .design2 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .design2 .div_txts div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .design2 .div_txts div .p_design {
+    text-align: left;
+  }
+  .cust_story .d_logos {
+    gap: 20;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .cust_story .d_logos img {
+    margin: 0;
+  }
+}
+
+/* -------------------- */
+@media screen and (min-width: 870px) {
+  .intro .p_present {
+    margin-bottom: 20px;
+  }
+  .intro h1 {
+    margin-bottom: 20px;
+  }
+  .intro .p_create {
+    margin-bottom: 40px;
+  }
+  .intro form {
+    margin-bottom: 20px;
+  }
   .design1 .design1_img {
-    position: relative;
+    position: static;
     z-index: 0;
+  }
+  .design1 .design1_img img {
+    margin: 0;
+    padding: 0 auto;
+  }
+  .design1 .div_design1 {
+    padding-left: 20px;
+    padding-right: 0;
+    margin-top: -290px;
+  }
+  .design2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .design2 .div_txts {
+    padding-right: 30px;
+    margin-right: -20px;
+  }
+  .design2 .div_txts div h2 {
+    padding-right: 40px;
+  }
+  .design2 .div_txts div .p_weDesigned {
+    padding-right: 0px;
+  }
+  .design2 .div_txts .d2_design2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .design2 .div_txts .d2_design2 div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding: 0;
+  }
+  .design2 .div_txts .d2_design2 div span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -825,18 +950,33 @@ footer .footer_li_grey {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 45px;
+    height: 45px;
+  }
+  .design2 .div_txts .d2_design2 div span img {
+    width: 28px;
+  }
+  .design2 .div_txts .d2_design2 div p {
+    padding-left: 0;
+    padding-right: 15px;
+    text-align: left;
+    font-size: 0.9em;
+  }
+  .design2 .div_txts .d2_design2 div h3 {
+    margin-bottom: 0;
+  }
+  .design2 .div_txts .d2_design2 div .p_special {
+    padding-left: 0;
+    padding-right: 15px;
+    font-size: 0.9em;
+  }
+  .design2 .div_txts .d2_design2 .d2_design2_d2 {
     padding: 0;
+    margin-top: -35px;
   }
-  .design1 .div_design1 {
-    z-index: 0;
-    padding-top: 0;
-  }
-  .design2 {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  .cust_story .d_logos {
-    gap: 20px;
+  .design2 div img {
+    height: 550px;
+    border-radius: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
