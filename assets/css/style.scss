@@ -536,7 +536,7 @@ a.nav-link {
     div.price_basic {
         background: #2B405A;
         border-radius: 6px;
-        padding: 30px 50px;
+        padding: 30px 40px;
         width: 310px;
             p, ul {
                 padding: 25px 0;
@@ -612,7 +612,7 @@ a.nav-link {
     div.price_pro {
         background: $whiteColor;
         border-radius: 6px;
-        padding: 30px 50px; 
+        padding: 30px 40px; 
         width: 310px;
         div.pro_pop {
             display: flex;
@@ -873,7 +873,7 @@ footer {
 
 /* ------------ TABLETTE ---------- */
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 768px){
 
     body{
         font-size: 16px;
