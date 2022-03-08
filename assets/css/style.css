@@ -2,8 +2,10 @@
 @font-face {
   font-family: "karla";
   src: url(../font/Karla/Karla-Regular.ttf) format("truetype");
+  font-display: swap;
   font-family: "rubik";
   src: url(../font/Rubik/Rubik-Regular.ttf) format("truetype");
+  font-display: swap;
 }
 
 /* Variables */
