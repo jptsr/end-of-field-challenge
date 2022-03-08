@@ -507,7 +507,7 @@ a.nav-link:hover {
 .price_design div.price_basic {
   background: #2B405A;
   border-radius: 6px;
-  padding: 30px 50px;
+  padding: 30px 40px;
   width: 310px;
 }
 
@@ -594,7 +594,7 @@ a.nav-link:hover {
 .price_design div.price_pro {
   background: white;
   border-radius: 6px;
-  padding: 30px 50px;
+  padding: 30px 40px;
   width: 310px;
 }
 
@@ -818,7 +818,7 @@ footer .footer_li_grey {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #E4E4E4;
+    background-color: #E3EEF8;
     width: 100%;
     text-align: center;
     -webkit-transition: 0.5s;
@@ -865,7 +865,7 @@ footer .footer_li_grey {
 }
 
 /* ------------ TABLETTE ---------- */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   body {
     font-size: 16px;
   }
